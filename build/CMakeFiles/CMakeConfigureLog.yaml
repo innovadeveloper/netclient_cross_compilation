@@ -1,0 +1,1586 @@
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:12 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_UNAME"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "uname"
+    candidate_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/uname"
+      - "/Users/kenny/.local/bin/uname"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/uname"
+      - "/usr/local/bin/uname"
+      - "/System/Cryptexes/App/usr/bin/uname"
+    found: "/usr/bin/uname"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineSystem.cmake:218 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 23.3.0 - arm64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeUnixFindMake.cmake:5 (find_program)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_MAKE_PROGRAM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "gmake"
+      - "make"
+      - "smake"
+    candidate_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/gmake"
+      - "/Users/kenny/.local/bin/gmake"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/gmake"
+      - "/usr/local/bin/gmake"
+      - "/System/Cryptexes/App/usr/bin/gmake"
+      - "/usr/bin/gmake"
+      - "/bin/gmake"
+      - "/usr/sbin/gmake"
+      - "/sbin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/gmake"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/gmake"
+      - "/usr/local/share/dotnet/gmake"
+      - "/Users/kenny/.dotnet/tools/gmake"
+      - "/opt/homebrew/bin/gmake"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/gmake"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/gmake"
+      - "/opt/flutter/bin/gmake"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/gmake"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/gmake"
+      - "/opt/apache-maven-3.9.6/bin/gmake"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/gmake"
+      - "/Users/kenny/.rvm/bin/gmake"
+      - "/usr/bin/ruby/gmake"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/make"
+      - "/Users/kenny/.local/bin/make"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/make"
+      - "/usr/local/bin/make"
+      - "/System/Cryptexes/App/usr/bin/make"
+    found: "/usr/bin/make"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompiler.cmake:73 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:69 (_cmake_find_compiler)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_CXX_COMPILER"
+    description: "CXX compiler"
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "c++"
+      - "g++"
+      - "cl"
+      - "bcc"
+      - "icpx"
+      - "icx"
+      - "clang++"
+    candidate_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/c++"
+      - "/Users/kenny/.local/bin/c++"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/c++"
+      - "/usr/local/bin/c++"
+      - "/System/Cryptexes/App/usr/bin/c++"
+    found: "/usr/bin/c++"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:501 (find_file)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:538 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "/opt/homebrew/share/cmake/Modules/"
+    found: "/opt/homebrew/share/cmake/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/4.4.3/CompilerIdCXX/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerId.cmake:323 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Detecting CXX compiler apple sysroot: "/usr/bin/c++" "-E" "apple-sdk.cpp"
+        # 1 "apple-sdk.cpp"
+        # 1 "<built-in>" 1
+        # 1 "<built-in>" 3
+        # 433 "<built-in>" 3
+        # 1 "<command line>" 1
+        # 1 "<built-in>" 2
+        # 1 "apple-sdk.cpp" 2
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 1 3 4
+        # 86 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityVersions.h" 1 3 4
+        # 87 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 206 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 1 3 4
+        # 177 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 1 3 4
+        # 176 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 3 4
+        # 1 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternalLegacy.h" 1 3 4
+        # 177 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityInternal.h" 2 3 4
+        # 178 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/Availability.h" 2 3 4
+        # 207 "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/AvailabilityMacros.h" 2 3 4
+        # 2 "apple-sdk.cpp" 2
+        
+        
+      Found apple sysroot: /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ar"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/ar"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_RANLIB"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ranlib"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/ranlib"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_STRIP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "strip"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/strip"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "ld"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/ld"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_NM"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "nm"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/nm"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJDUMP"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objdump"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    found: "/usr/bin/objdump"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_OBJCOPY"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "objcopy"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/usr/bin/objcopy"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/objcopy"
+      - "/Users/kenny/.local/bin/objcopy"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/objcopy"
+      - "/usr/local/bin/objcopy"
+      - "/System/Cryptexes/App/usr/bin/objcopy"
+      - "/bin/objcopy"
+      - "/usr/sbin/objcopy"
+      - "/sbin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/objcopy"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/objcopy"
+      - "/usr/local/share/dotnet/objcopy"
+      - "/Users/kenny/.dotnet/tools/objcopy"
+      - "/opt/homebrew/bin/objcopy"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/objcopy"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/objcopy"
+      - "/opt/flutter/bin/objcopy"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/objcopy"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/objcopy"
+      - "/opt/apache-maven-3.9.6/bin/objcopy"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/objcopy"
+      - "/Users/kenny/.rvm/bin/objcopy"
+      - "/usr/bin/ruby/objcopy"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_READELF"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "readelf"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/usr/bin/readelf"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/readelf"
+      - "/Users/kenny/.local/bin/readelf"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/readelf"
+      - "/usr/local/bin/readelf"
+      - "/System/Cryptexes/App/usr/bin/readelf"
+      - "/bin/readelf"
+      - "/usr/sbin/readelf"
+      - "/sbin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/readelf"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/readelf"
+      - "/usr/local/share/dotnet/readelf"
+      - "/Users/kenny/.dotnet/tools/readelf"
+      - "/opt/homebrew/bin/readelf"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/readelf"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/readelf"
+      - "/opt/flutter/bin/readelf"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/readelf"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/readelf"
+      - "/opt/apache-maven-3.9.6/bin/readelf"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/readelf"
+      - "/Users/kenny/.rvm/bin/readelf"
+      - "/usr/bin/ruby/readelf"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_DLLTOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "dlltool"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/usr/bin/dlltool"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/dlltool"
+      - "/Users/kenny/.local/bin/dlltool"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/dlltool"
+      - "/usr/local/bin/dlltool"
+      - "/System/Cryptexes/App/usr/bin/dlltool"
+      - "/bin/dlltool"
+      - "/usr/sbin/dlltool"
+      - "/sbin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/dlltool"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/dlltool"
+      - "/usr/local/share/dotnet/dlltool"
+      - "/Users/kenny/.dotnet/tools/dlltool"
+      - "/opt/homebrew/bin/dlltool"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/dlltool"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/dlltool"
+      - "/opt/flutter/bin/dlltool"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/dlltool"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/dlltool"
+      - "/opt/apache-maven-3.9.6/bin/dlltool"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/dlltool"
+      - "/Users/kenny/.rvm/bin/dlltool"
+      - "/usr/bin/ruby/dlltool"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_ADDR2LINE"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "addr2line"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/usr/bin/addr2line"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/addr2line"
+      - "/Users/kenny/.local/bin/addr2line"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/addr2line"
+      - "/usr/local/bin/addr2line"
+      - "/System/Cryptexes/App/usr/bin/addr2line"
+      - "/bin/addr2line"
+      - "/usr/sbin/addr2line"
+      - "/sbin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/addr2line"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/addr2line"
+      - "/usr/local/share/dotnet/addr2line"
+      - "/Users/kenny/.dotnet/tools/addr2line"
+      - "/opt/homebrew/bin/addr2line"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/addr2line"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/addr2line"
+      - "/opt/flutter/bin/addr2line"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/addr2line"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/addr2line"
+      - "/opt/apache-maven-3.9.6/bin/addr2line"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/addr2line"
+      - "/Users/kenny/.rvm/bin/addr2line"
+      - "/usr/bin/ruby/addr2line"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeFindBinUtils.cmake:247 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_TAPI"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "tapi"
+    candidate_directories:
+      - "/usr/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/usr/bin/tapi"
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/tapi"
+      - "/Users/kenny/.local/bin/tapi"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/tapi"
+      - "/usr/local/bin/tapi"
+      - "/System/Cryptexes/App/usr/bin/tapi"
+      - "/bin/tapi"
+      - "/usr/sbin/tapi"
+      - "/sbin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/tapi"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/tapi"
+      - "/usr/local/share/dotnet/tapi"
+      - "/Users/kenny/.dotnet/tools/tapi"
+      - "/opt/homebrew/bin/tapi"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/tapi"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/tapi"
+      - "/opt/flutter/bin/tapi"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/tapi"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/tapi"
+      - "/opt/apache-maven-3.9.6/bin/tapi"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/tapi"
+      - "/Users/kenny/.rvm/bin/tapi"
+      - "/usr/bin/ruby/tapi"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Platform/Darwin.cmake:66 (find_program)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeSystemSpecificInformation.cmake:32 (include)"
+      - "CMakeLists.txt:2 (project)"
+    mode: "program"
+    variable: "CMAKE_INSTALL_NAME_TOOL"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "FIRST"
+      SearchAppBundle: "FIRST"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "install_name_tool"
+    candidate_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/"
+      - "/Users/kenny/.local/bin/"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/"
+      - "/usr/local/bin/"
+      - "/System/Cryptexes/App/usr/bin/"
+      - "/usr/bin/"
+      - "/bin/"
+      - "/usr/sbin/"
+      - "/sbin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin/"
+      - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin/"
+      - "/usr/local/share/dotnet/"
+      - "/Users/kenny/.dotnet/tools/"
+      - "/opt/homebrew/bin/"
+      - "/Applications/iTerm.app/Contents/Resources/utilities/"
+      - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+      - "/opt/flutter/bin/"
+      - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin/"
+      - "/Users/kenny/Library/Android/sdk/platform-tools/"
+      - "/opt/apache-maven-3.9.6/bin/"
+      - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/"
+      - "/Users/kenny/.rvm/bin/"
+      - "/usr/bin/ruby/"
+    searched_directories:
+      - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin/install_name_tool"
+      - "/Users/kenny/.local/bin/install_name_tool"
+      - "/Users/kenny/.nvm/versions/node/v22.19.0/bin/install_name_tool"
+      - "/usr/local/bin/install_name_tool"
+      - "/System/Cryptexes/App/usr/bin/install_name_tool"
+    found: "/usr/bin/install_name_tool"
+    search_context:
+      ENV{PATH}:
+        - "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home/bin"
+        - "/Users/kenny/.local/bin"
+        - "/Users/kenny/.nvm/versions/node/v22.19.0/bin"
+        - "/usr/local/bin"
+        - "/System/Cryptexes/App/usr/bin"
+        - "/usr/bin"
+        - "/bin"
+        - "/usr/sbin"
+        - "/sbin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin"
+        - "/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin"
+        - "/usr/local/share/dotnet"
+        - "~/.dotnet/tools"
+        - "/opt/homebrew/bin"
+        - "/Applications/iTerm.app/Contents/Resources/utilities"
+        - "/opt/homebrew/Cellar/tree/2.1.0/bin/"
+        - "/opt/homebrew/bin/"
+        - "/opt/flutter/bin"
+        - "/opt/gcc-arm-none-eabi-10.3-2021.10/bin"
+        - "/usr/local/share/dotnet"
+        - "/Users/kenny/Library/Android/sdk/platform-tools/"
+        - "/opt/apache-maven-3.9.6/bin/"
+        - "/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"
+        - "/Users/kenny/.rvm/bin"
+        - "/usr/bin/ruby"
+      CMAKE_INSTALL_PREFIX: "/usr/local"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn"
+      binary: "/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: ""
+      CMAKE_OSX_SYSROOT: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: '/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn'
+        
+        Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8c943/fast
+        /Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8c943.dir/build.make CMakeFiles/cmTC_8c943.dir/build
+        Building CXX object CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -arch arm64   -v -Wl,-v -MD -MT CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.3.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+        clang: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.5 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.3.0
+        ignoring nonexistent directory "/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"
+        ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include
+         /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include
+         /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)
+        End of search list.
+        Linking CXX executable cmTC_8c943
+        /opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c943.dir/link.txt --verbose=1
+        Apple clang version 15.0.0 (clang-1500.3.9.4)
+        Target: arm64-apple-darwin23.3.0
+        Thread model: posix
+        InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+         "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -o cmTC_8c943 -L/usr/local/lib -v CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a
+        @(#)PROGRAM:ld PROJECT:ld-1053.12
+        BUILD 10:15:51 Mar 29 2024
+        configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+        will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+        LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+        TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+        Library search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift
+        Framework search paths:
+        	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks
+        /usr/bin/c++  -arch arm64  -v -Wl,-v CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_8c943
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:160 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Effective list of requested architectures (possibly empty)  : ""
+      Effective list of architectures found in the ABI info binary: "arm64"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:255 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+          add: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        end of search list found
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        collapse include dir [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        implicit include dirs: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)))("|,| |$)]
+        ignore line: [Change Dir: '/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn']
+        ignore line: []
+        ignore line: [Run Build Command(s): /opt/homebrew/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_8c943/fast]
+        ignore line: [/Applications/Xcode.app/Contents/Developer/usr/bin/make  -f CMakeFiles/cmTC_8c943.dir/build.make CMakeFiles/cmTC_8c943.dir/build]
+        ignore line: [Building CXX object CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -arch arm64   -v -Wl -v -MD -MT CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -c /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        ignore line: [clang: warning: -Wl -v: 'linker' input unused [-Wunused-command-line-argument]]
+        ignore line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang" -cc1 -triple arm64-apple-macosx14.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=non-leaf -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=1 -fobjc-msgsend-selector-stubs -target-sdk-version=14.5 -fvisibility-inlines-hidden-static-local-var -target-cpu apple-m1 -target-feature +v8.5a -target-feature +crc -target-feature +lse -target-feature +rdm -target-feature +crypto -target-feature +dotprod -target-feature +fp-armv8 -target-feature +neon -target-feature +fp16fml -target-feature +ras -target-feature +rcpc -target-feature +zcm -target-feature +zcz -target-feature +fullfp16 -target-feature +sm4 -target-feature +sha3 -target-feature +sha2 -target-feature +aes -target-abi darwinpcs -debugger-tuning=lldb -target-linker-version 1053.12 -v -fcoverage-compilation-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn -resource-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0 -dependency-file CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o.d -skip-unused-modulemap-deps -MT CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -I/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1 -internal-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/CMakeScratch/TryCompile-DELCTn -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation -fno-odr-hash-protocols -clang-vendor-feature=+enableAggressiveVLAFolding -clang-vendor-feature=+revert09abecef7bbf -clang-vendor-feature=+thisNoAlignAttr -clang-vendor-feature=+thisNoNullAttr -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -x c++ /opt/homebrew/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 15.0.0 (clang-1500.3.9.4) default target arm64-apple-darwin23.3.0]
+        ignore line: [ignoring nonexistent directory "/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/local/include"]
+        ignore line: [ignoring nonexistent directory "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/Library/Frameworks"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/c++/v1]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include]
+        ignore line: [ /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks (framework directory)]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_8c943]
+        ignore line: [/opt/homebrew/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c943.dir/link.txt --verbose=1]
+        ignore line: [Apple clang version 15.0.0 (clang-1500.3.9.4)]
+        ignore line: [Target: arm64-apple-darwin23.3.0]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -o cmTC_8c943 -L/usr/local/lib -v CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> linker [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld]
+        link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -lto_library /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib -dynamic -arch arm64 -platform_version macos 14.0.0 14.5 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk -o cmTC_8c943 -L/usr/local/lib -v CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+          arg [-demangle] ==> ignore
+          arg [-lto_library] ==> ignore, skip following value
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libLTO.dylib] ==> skip value of -lto_library
+          arg [-dynamic] ==> ignore
+          arg [-arch] ==> ignore
+          arg [arm64] ==> ignore
+          arg [-platform_version] ==> ignore
+          arg [macos] ==> ignore
+          arg [14.0.0] ==> ignore
+          arg [14.5] ==> ignore
+          arg [-syslibroot] ==> ignore
+          arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_8c943] ==> ignore
+          arg [-L/usr/local/lib] ==> dir [/usr/local/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_8c943.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lc++] ==> lib [c++]
+          arg [-lSystem] ==> lib [System]
+          arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        linker tool for 'CXX': /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld 
+        Library search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        Framework search paths: [;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        remove lib [System]
+        remove lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/lib/darwin/libclang_rt.osx.a]
+        collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib]
+        collapse library dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        collapse framework dir [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks] ==> [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+        implicit libs: [c++]
+        implicit objs: []
+        implicit dirs: [/usr/local/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib;/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/lib/swift]
+        implicit fwks: [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/share/cmake/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "/opt/homebrew/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Running the CXX compiler's linker: "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" "-v"
+      @(#)PROGRAM:ld PROJECT:ld-1053.12
+      BUILD 10:15:51 Mar 29 2024
+      configured to support archs: armv6 armv7 armv7s arm64 arm64e arm64_32 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em
+      will use ld-classic for: armv6 armv7 armv7s arm64_32 i386 armv6m armv7k armv7m armv7em
+      LTO support using: LLVM version 15.0.0 (static support for 29, runtime is 29)
+      TAPI support using: Apple TAPI version 15.0.0 (tapi-1500.3.2.2)
+...

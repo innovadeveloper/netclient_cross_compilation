@@ -1,0 +1,15 @@
+{
+  "name": "netclient",
+  "version": "0.1.0",
+  "description": "Cliente HTTP multiplataforma con transporte intercambiable",
+  "build": {
+    "srcDir": "src",
+    "includeDir": "include",
+    "srcFilter": [
+      "+<*.cpp>",
+      "-<platform/macos>",
+      "-<platform/android>",
+      "+<platform/esp32/*.cpp>"
+    ]
+  }
+}

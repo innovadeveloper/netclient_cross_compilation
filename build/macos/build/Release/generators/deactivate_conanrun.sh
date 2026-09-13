@@ -1,0 +1,1 @@
+. "/Users/kenny/Documents/Projects/C++Projects/netclient/build/macos/build/Release/generators/deactivate_conanrunenv-release-armv8.sh"

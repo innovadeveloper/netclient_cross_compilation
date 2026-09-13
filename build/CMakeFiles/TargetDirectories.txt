@@ -1,0 +1,4 @@
+/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/netclient.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/netclient_test.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/edit_cache.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles/rebuild_cache.dir

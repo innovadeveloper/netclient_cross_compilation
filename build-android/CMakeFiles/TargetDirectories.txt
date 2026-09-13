@@ -1,0 +1,4 @@
+/Users/kenny/Documents/Projects/C++Projects/netclient/build-android/CMakeFiles/netclient.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build-android/CMakeFiles/netclient_test.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build-android/CMakeFiles/edit_cache.dir
+/Users/kenny/Documents/Projects/C++Projects/netclient/build-android/CMakeFiles/rebuild_cache.dir
