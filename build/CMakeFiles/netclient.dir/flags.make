@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = -Dnetclient_EXPORTS
 
-CXX_INCLUDES = -I/Users/kenny/Documents/Projects/C++Projects/netclient/include -I/Users/kenny/Documents/Projects/C++Projects/netclient/src
+CXX_INCLUDES = -I/Users/kenny/Documents/Projects/C++Projects/netclient/include -I/Users/kenny/Documents/Projects/C++Projects/netclient/src -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++17 -arch arm64 -fPIC
 

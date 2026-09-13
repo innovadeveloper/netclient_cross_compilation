@@ -4,7 +4,7 @@
 # compile CXX with /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
 CXX_DEFINES = -Dnetclient_EXPORTS
 
-CXX_INCLUDES = -I/Users/kenny/Documents/Projects/C++Projects/netclient/include -I/Users/kenny/Documents/Projects/C++Projects/netclient/src
+CXX_INCLUDES = -I/Users/kenny/Documents/Projects/C++Projects/netclient/include -I/Users/kenny/Documents/Projects/C++Projects/netclient/src -isystem /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include
 
-CXX_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -std=gnu++17 -fPIC
+CXX_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIC
 

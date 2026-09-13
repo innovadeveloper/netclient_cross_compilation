@@ -695,4 +695,49 @@ CMakeFiles/netclient.dir/src/platform/android/transport_android.cpp.o: \
   /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__functional/not_fn.h \
   /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
-  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__functional/unary_negate.h
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__functional/unary_negate.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/evp.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/macros.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/opensslconf.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/configuration.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/opensslv.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/types.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/e_os2.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/safestack.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/stack.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/core.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/core_dispatch.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/symhacks.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/bio.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/crypto.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/cryptoerr.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/cryptoerr_legacy.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/bioerr.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/evperr.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/params.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/bn.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/bnerr.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/objects.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/obj_mac.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/asn1.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/asn1err.h \
+  /Users/kenny/.conan2/p/b/opensd5fe864728319/p/include/openssl/objectserr.h \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/sstream \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/istream \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/ostream \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/bitset \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/ios \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__locale \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/locale.h \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/locale.h \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/mutex \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__mutex_base \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/system_error \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__errc \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/cerrno \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__support/android/locale_bionic.h \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/locale \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/streambuf \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/__bsd_locale_fallbacks.h \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/cstdarg \
+  /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1/iomanip

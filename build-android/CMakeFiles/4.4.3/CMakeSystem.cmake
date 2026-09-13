@@ -3,7 +3,7 @@ set(CMAKE_HOST_SYSTEM_NAME "Darwin")
 set(CMAKE_HOST_SYSTEM_VERSION "23.3.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
-include("/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/build/cmake/android.toolchain.cmake")
+include("/Users/kenny/Documents/Projects/C++Projects/netclient/build/android/build/Release/generators/conan_toolchain.cmake")
 
 set(CMAKE_SYSTEM "Android-1")
 set(CMAKE_SYSTEM_NAME "Android")

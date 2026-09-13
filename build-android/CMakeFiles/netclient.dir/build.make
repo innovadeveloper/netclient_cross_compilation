@@ -112,6 +112,9 @@ libnetclient.so: CMakeFiles/netclient.dir/src/client.cpp.o
 libnetclient.so: CMakeFiles/netclient.dir/src/platform/android/transport_android.cpp.o
 libnetclient.so: CMakeFiles/netclient.dir/build.make
 libnetclient.so: CMakeFiles/netclient.dir/compiler_depend.ts
+libnetclient.so: /Users/kenny/.conan2/p/b/opensd5fe864728319/p/lib/libssl.a
+libnetclient.so: /Users/kenny/.conan2/p/b/opensd5fe864728319/p/lib/libcrypto.a
+libnetclient.so: /Users/kenny/.conan2/p/b/zliba402009712b6e/p/lib/libz.a
 libnetclient.so: CMakeFiles/netclient.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libnetclient.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/netclient.dir/link.txt --verbose=$(VERBOSE)

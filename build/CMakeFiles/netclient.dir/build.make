@@ -111,6 +111,8 @@ netclient_EXTERNAL_OBJECTS =
 libnetclient.dylib: CMakeFiles/netclient.dir/src/client.cpp.o
 libnetclient.dylib: CMakeFiles/netclient.dir/src/platform/macos/transport_macos.cpp.o
 libnetclient.dylib: CMakeFiles/netclient.dir/build.make
+libnetclient.dylib: /opt/homebrew/lib/libssl.dylib
+libnetclient.dylib: /opt/homebrew/lib/libcrypto.dylib
 libnetclient.dylib: CMakeFiles/netclient.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenny/Documents/Projects/C++Projects/netclient/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libnetclient.dylib"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/netclient.dir/link.txt --verbose=$(VERBOSE)

@@ -14,12 +14,6 @@
 # EXTERNAL cache entries
 ########################
 
-//No help, variable specified on the command line.
-ANDROID_ABI:UNINITIALIZED=arm64-v8a
-
-//No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-24
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-addr2line
 
@@ -37,7 +31,7 @@ CMAKE_ASM_FLAGS_RELEASE:STRING=
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=
+CMAKE_BUILD_TYPE:STRING=Release
 
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
@@ -212,14 +206,22 @@ CMAKE_STRIP:FILEPATH=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909
 //Path to a program.
 CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/build/cmake/android.toolchain.cmake
+//Path to a CMake toolchain file, read early in the CMake run,
+// that specifies the compilers, toolchain utilities, and target-platform
+// information used when cross-compiling.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=build/android/build/Release/generators/conan_toolchain.cmake
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//The directory containing a CMake configuration file for OpenSSL.
+OpenSSL_DIR:PATH=/Users/kenny/Documents/Projects/C++Projects/netclient/build/android/build/Release/generators
+
+//The directory containing a CMake configuration file for ZLIB.
+ZLIB_DIR:PATH=/Users/kenny/Documents/Projects/C++Projects/netclient/build/android/build/Release/generators
 
 //Value Computed by CMake
 netclient_BINARY_DIR:STATIC=/Users/kenny/Documents/Projects/C++Projects/netclient/build-android
