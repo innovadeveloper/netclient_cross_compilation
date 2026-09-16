@@ -117,7 +117,11 @@ export ANDROID_NDK=/opt/homebrew/share/android-commandlinetools/ndk/26.1.1090912
 
 ```bash
 cd ~/netclient   # o donde hayas descomprimido el tar.gz
-mkdir build-android && cd build-android
+# mkdir build-android && cd build-android
+conan install . \
+  --profile android_armv8 \
+  --output-folder=build-android \
+  --build=missing
 ```
 
 ### 2.4 Configurar CMake con el toolchain del NDK
@@ -126,7 +130,7 @@ mkdir build-android && cd build-android
 cmake .. \
   -DCMAKE_TOOLCHAIN_FILE=$ANDROID_NDK/build/cmake/android.toolchain.cmake \
   -DANDROID_ABI=arm64-v8a \
-  -DANDROID_PLATFORM=android-24
+  -DANDROID_PLATFORM=android-24 \
 ```
 
 ### 2.5 Compilar
@@ -137,6 +141,44 @@ cmake --build .
 
 Esto genera `libnetclient.so` y `netclient_test`, ambos ARM64 — **no ejecutables
 en la terminal de tu Mac**, solo en Android.
+
+#### 2.5.1 Identificar los compilados 
+
+```bash
+
+NDK=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125; 
+R=$NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin/llvm-readelf; 
+B=/Users/kenny/Projects/sample/build-android; 
+
+echo "=== libsample.so ==="; 
+$R -d $B/libsample.so | awk '/NEEDED/ {print $NF}'; 
+echo ""; echo "=== sample_test ==="; 
+$R -d $B/sample_test | awk '/NEEDED/ {print $NF}'
+
+  # === libsample.so ===
+  # [libm.so]
+  # [libc++_shared.so]
+  # [libdl.so]
+  # [libc.so]
+
+  # === sample_test ===
+  # [libsample.so]
+  # [libc.so]
+  # [libm.so]
+  # [libc++_shared.so]
+  # [libdl.so]
+
+
+  # NDK=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
+  # LIBCXX=$NDK/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so
+
+  # /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so
+
+  # adb shell "cd /data/local/tmp && LD_LIBRARY_PATH=. ./sample_test"
+  # adb push sample_test /data/local/tmp/
+  # curl -o /tmp/cacert.pem https://curl.se/ca/cacert.pem
+  # adb push /tmp/cacert.pem /data/local/tmp/cacert.pem
+```
 
 ### 2.6 Probar en un dispositivo físico
 
@@ -149,6 +191,7 @@ adb devices
 ```bash
 adb push netclient_test /data/local/tmp/
 adb push libnetclient.so /data/local/tmp/
+adb push /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so /data/local/tmp/
 ```
 
 **Dale permisos de ejecución y corre:**
@@ -562,3 +605,16 @@ Si no aparece nada, compila en el default de esa versión (probablemente
 - [ ] `-L${PROJECT_DIR}/lib/netclient -lnetclient` presente y al final de `build_flags`
 - [ ] `pio run --target clean` antes de recompilar tras cualquier cambio de `platformio.ini`
 - [ ] Un `.a` distinto por variante de chip (ESP32 / S3 / C3)
+
+
+
+openssl s_client -connect https://api.github.com | \
+  openssl x509 -pubkey -noout | \
+  openssl pkey -pubin -outform der | \
+  openssl dgst -sha256 -binary | base64
+
+
+openssl s_client -connect api.github.com:443 </dev/null 2>/dev/null | \
+    openssl x509 -pubkey -noout | \
+    openssl pkey -pubin -outform der | \
+    openssl dgst -sha256 -binary | base64
