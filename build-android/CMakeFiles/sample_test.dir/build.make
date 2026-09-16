@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kenny/Projects/sample
+CMAKE_SOURCE_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kenny/Projects/sample/build-android
+CMAKE_BINARY_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sample_test.dir/depend.make
@@ -73,18 +73,18 @@ CMakeFiles/sample_test.dir/codegen:
 .PHONY : CMakeFiles/sample_test.dir/codegen
 
 CMakeFiles/sample_test.dir/main.cpp.o: CMakeFiles/sample_test.dir/flags.make
-CMakeFiles/sample_test.dir/main.cpp.o: /Users/kenny/Projects/sample/main.cpp
+CMakeFiles/sample_test.dir/main.cpp.o: /Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp
 CMakeFiles/sample_test.dir/main.cpp.o: CMakeFiles/sample_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenny/Projects/sample/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample_test.dir/main.cpp.o"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample_test.dir/main.cpp.o -MF CMakeFiles/sample_test.dir/main.cpp.o.d -o CMakeFiles/sample_test.dir/main.cpp.o -c /Users/kenny/Projects/sample/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample_test.dir/main.cpp.o"
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample_test.dir/main.cpp.o -MF CMakeFiles/sample_test.dir/main.cpp.o.d -o CMakeFiles/sample_test.dir/main.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp
 
 CMakeFiles/sample_test.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample_test.dir/main.cpp.i"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenny/Projects/sample/main.cpp > CMakeFiles/sample_test.dir/main.cpp.i
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp > CMakeFiles/sample_test.dir/main.cpp.i
 
 CMakeFiles/sample_test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample_test.dir/main.cpp.s"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenny/Projects/sample/main.cpp -o CMakeFiles/sample_test.dir/main.cpp.s
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp -o CMakeFiles/sample_test.dir/main.cpp.s
 
 # Object files for target sample_test
 sample_test_OBJECTS = \
@@ -97,13 +97,14 @@ sample_test: CMakeFiles/sample_test.dir/main.cpp.o
 sample_test: CMakeFiles/sample_test.dir/build.make
 sample_test: CMakeFiles/sample_test.dir/compiler_depend.ts
 sample_test: libsample.so
-sample_test: /Users/kenny/.conan2/p/b/libcudb8c2066c865f/p/lib/libcurl.a
-sample_test: /Users/kenny/.conan2/p/b/paho-afee0ab2964a4/p/lib/libpaho-mqtt3as.a
-sample_test: /Users/kenny/.conan2/p/b/opens2e34e79576f2f/p/lib/libssl.a
-sample_test: /Users/kenny/.conan2/p/b/opens2e34e79576f2f/p/lib/libcrypto.a
-sample_test: /Users/kenny/.conan2/p/b/zliba402009712b6e/p/lib/libz.a
+sample_test: /Users/mac/.conan2/p/b/libcu9fc8a470d3116/p/lib/libcurl.a
+sample_test: /Users/mac/.conan2/p/b/paho-8e7514c758216/p/lib/libpaho-mqtt3as.a
+sample_test: /Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/lib/libwebsockets.a
+sample_test: /Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/libssl.a
+sample_test: /Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/libcrypto.a
+sample_test: /Users/mac/.conan2/p/b/zlibfcf57a535f0b7/p/lib/libz.a
 sample_test: CMakeFiles/sample_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenny/Projects/sample/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sample_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable sample_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sample_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -115,6 +116,6 @@ CMakeFiles/sample_test.dir/clean:
 .PHONY : CMakeFiles/sample_test.dir/clean
 
 CMakeFiles/sample_test.dir/depend:
-	cd /Users/kenny/Projects/sample/build-android && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kenny/Projects/sample /Users/kenny/Projects/sample /Users/kenny/Projects/sample/build-android /Users/kenny/Projects/sample/build-android /Users/kenny/Projects/sample/build-android/CMakeFiles/sample_test.dir/DependInfo.cmake "--color=$(COLOR)" sample_test
+	cd /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mac/Projects/C++Projects/netclient_cross_compilation /Users/mac/Projects/C++Projects/netclient_cross_compilation /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/sample_test.dir/DependInfo.cmake "--color=$(COLOR)" sample_test
 .PHONY : CMakeFiles/sample_test.dir/depend
 

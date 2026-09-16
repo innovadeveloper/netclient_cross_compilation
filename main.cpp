@@ -5,6 +5,22 @@
 #include <stdexcept>
 #include "MQTTClient.h"
 
+
+#include <libwebsockets.h>
+#include <iostream>
+#include <string>
+#include <cstring>
+#include <csignal>
+
+#include <deque>
+#include <mutex>
+#include <string>
+#include <thread>
+#include <chrono>
+
+static std::deque<std::string> g_send_queue;
+static std::mutex g_send_mutex;
+
 // CAs de Let's Encrypt embebidas en el binario (ISRG Root X1 + X2).
 // Generado con: curl https://letsencrypt.org/certs/isrgrootx1.pem
 //                     https://letsencrypt.org/certs/isrg-root-x2.pem
@@ -61,6 +77,7 @@ tL4ndQavEi51mI38AjEAi/V3bNTIZargCyzuFJ0nN6T5U6VR5CmD1/iQMVtCnwr1
 -----END CERTIFICATE-----
 )";
 
+
 size_t escribirRespuesta(void* datosRecibidos, size_t tamano, size_t nmemb, std::string* salida) {
     size_t bytesTotales = tamano * nmemb;
     salida->append(static_cast<char*>(datosRecibidos), bytesTotales);
@@ -106,6 +123,166 @@ private:
     std::unique_ptr<CURL, decltype(&curl_easy_cleanup)> curl_;
 };
 
+
+
+// Variable global para controlar el bucle de eventos
+static volatile int force_exit = 0;
+static struct lws *client_wsi = nullptr;
+
+// Estructura para almacenar el mensaje a enviar
+struct per_session_data {
+    char send_buffer[LWS_PRE + 512];
+    size_t send_len = 0;
+};
+
+void sendMessage(const std::string& msg) {
+    std::lock_guard<std::mutex> lock(g_send_mutex);
+    g_send_queue.push_back(msg);
+    // Despertar el bucle para que procese el envío
+    if (client_wsi) {
+        lws_callback_on_writable(client_wsi);
+    }
+}
+
+// Callback: Aquí se manejan todos los eventos del WebSocket
+static int callback_ws(struct lws *wsi, enum lws_callback_reasons reason,
+                       void *user, void *in, size_t len) {
+    struct per_session_data *pss = (struct per_session_data *)user;
+
+    switch (reason) {
+        case LWS_CALLBACK_CLIENT_ESTABLISHED:
+            std::cout << "[CLIENT] Conectado al servidor WebSocket." << std::endl;
+            // Ya no enviamos hardcodeado. Opcionalmente encolamos un "hello".
+            // sendMessage(R"({"type":"hello","device":"SM-A127M"})");
+            break;
+
+        case LWS_CALLBACK_CLIENT_WRITEABLE:
+        {
+            std::string msg;
+            {
+                std::lock_guard<std::mutex> lock(g_send_mutex);
+                if (g_send_queue.empty()) break;
+                msg = g_send_queue.front();
+                g_send_queue.pop_front();
+            }
+
+            if (msg.size() > 512) {
+                std::cerr << "[ERROR] Mensaje demasiado grande\n";
+                break;
+            }
+
+            std::memcpy(pss->send_buffer + LWS_PRE, msg.data(), msg.size());
+            pss->send_len = msg.size();
+
+            int bytes_sent = lws_write(wsi,
+                                    (unsigned char*)pss->send_buffer + LWS_PRE,
+                                    pss->send_len,
+                                    LWS_WRITE_TEXT);
+            if (bytes_sent < (int)pss->send_len) {
+                std::cerr << "[ERROR] Fallo al enviar\n";
+                return -1;
+            }
+            std::cout << "[CLIENT] Enviado: " << msg << "\n";
+            pss->send_len = 0;
+
+            // Si quedan mensajes, pedir otra vuelta de escritura
+            {
+                std::lock_guard<std::mutex> lock(g_send_mutex);
+                if (!g_send_queue.empty()) {
+                    lws_callback_on_writable(wsi);
+                }
+            }
+            break;
+        }
+
+        // 3. Hemos recibido datos del servidor
+        case LWS_CALLBACK_CLIENT_RECEIVE:
+            std::cout << "[CLIENT] Mensaje recibido: " 
+                      << std::string((const char *)in, len) << std::endl;
+            break;
+
+        // 4. La conexión se ha cerrado
+        case LWS_CALLBACK_CLIENT_CLOSED:
+            std::cout << "[CLIENT] Conexión cerrada." << std::endl;
+            client_wsi = nullptr;
+            force_exit = 1;
+            break;
+
+        // 5. Error de conexión
+        case LWS_CALLBACK_CLIENT_CONNECTION_ERROR:
+            std::cerr << "[ERROR] Error de conexión: " 
+                      << (in ? (const char *)in : "Desconocido") << std::endl;
+            client_wsi = nullptr;
+            force_exit = 1;
+            break;
+
+        default:
+            break;
+    }
+    return 0;
+}
+
+// Lista de protocolos soportados
+static const struct lws_protocols protocols[] = {
+    {
+        "my-protocol",       // Nombre del protocolo
+        callback_ws,         // Función de callback
+        sizeof(struct per_session_data),
+        0,
+    },
+    { NULL, NULL, 0, 0 }     // Terminador de la lista
+};
+
+void connectToWebsocket() {
+    // 1. Configuración del contexto
+    struct lws_context_creation_info info;
+    std::memset(&info, 0, sizeof(info));
+    info.port = CONTEXT_PORT_NO_LISTEN; // No queremos escuchar, solo conectar
+    info.protocols = protocols;
+    info.gid = -1;
+    info.uid = -1;
+
+    // Creamos el contexto de libwebsockets
+    struct lws_context *context = lws_create_context(&info);
+    if (!context) {
+        std::cerr << "[ERROR] Fallo al crear el contexto de libwebsockets." << std::endl;
+        return;
+    }
+
+    // ws://ws.unidades-v2.abexacloud.com?deviceModel=SM-A127M
+    // 2. Configuración de la conexión al servidor
+    struct lws_client_connect_info ccinfo;
+    std::memset(&ccinfo, 0, sizeof(ccinfo));
+    ccinfo.context = context;
+    ccinfo.address = "ws.unidades-v2.abexacloud.com"; // URL de ejemplo (público)
+    ccinfo.port = 80;                     // Puerto para wss
+    ccinfo.path = "/?deviceModel=SM-A127M";                     // Ruta
+    ccinfo.host = ccinfo.address;          // Host
+    ccinfo.origin = ccinfo.address;        // Origin
+    ccinfo.protocol = protocols[0].name;   // Protocolo
+    // ccinfo.ssl_connection = LCCSCF_USE_SSL; // Habilitamos SSL/TLS para wss://
+
+    // Iniciamos la conexión
+    client_wsi = lws_client_connect_via_info(&ccinfo);
+    if (!client_wsi) {
+        std::cerr << "[ERROR] Fallo al iniciar la conexión." << std::endl;
+        lws_context_destroy(context);
+        return;
+    }
+
+    // 3. Bucle de eventos principal
+    while (!force_exit && client_wsi) {
+        // lws_service procesa los eventos de la red (no bloqueante)
+        lws_service(context, 0);
+    }
+
+    // 4. Limpieza
+    lws_context_destroy(context);
+    std::cout << "[CLIENT] Programa finalizado." << std::endl;
+    // return 0;
+}
+
+
 int main() {
     curl_global_init(CURL_GLOBAL_DEFAULT);
 
@@ -117,6 +294,25 @@ int main() {
         std::cerr << "Error: " << e.what() << "\n";
     }
 
+    // Lanza el WebSocket en un hilo aparte
+    std::thread ws_thread(connectToWebsocket);
+    ws_thread.detach();
+
+    // Espera un poco a que conecte
+    std::this_thread::sleep_for(std::chrono::seconds(2));
+
+    // Envía lo que quieras, cuando quieras
+    sendMessage("2|1~-11.935210|-77.054820|1000|0|usuario@beex");
+    std::this_thread::sleep_for(std::chrono::seconds(1));
+    sendMessage("2|1~-11.935210|-77.054820|1000|0|usuario@sampleeee");
+
+    // ... deja correr o termina cuando quieras
+    std::this_thread::sleep_for(std::chrono::seconds(5));
+
     curl_global_cleanup();
     return 0;
 }
+
+
+// ---
+

@@ -13,7 +13,7 @@ set(OpenSSL_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(paho-mqtt-c_PACKAGE_FOLDER_DEBUG "/Users/kenny/.conan2/p/b/paho-3392de7c24012/p")
+set(paho-mqtt-c_PACKAGE_FOLDER_DEBUG "/Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p")
 set(paho-mqtt-c_BUILD_MODULES_PATHS_DEBUG )
 
 

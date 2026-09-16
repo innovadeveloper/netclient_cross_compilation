@@ -8,6 +8,7 @@ class sampleConan(ConanFile):
     def requirements(self):
         self.requires("libcurl/8.5.0")
         self.requires("paho-mqtt-c/1.3.16")
+        self.requires("libwebsockets/4.5.8")
 
 
     def layout(self):

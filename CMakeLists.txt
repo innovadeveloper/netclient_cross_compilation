@@ -14,6 +14,7 @@ target_include_directories(sample
 
 find_package(CURL CONFIG REQUIRED)
 find_package(eclipse-paho-mqtt-c CONFIG REQUIRED)
+find_package(Libwebsockets CONFIG REQUIRED)
 
 
 if(APPLE)
@@ -30,4 +31,5 @@ add_executable(sample_test main.cpp)
 target_link_libraries(sample_test PRIVATE 
     sample
     CURL::libcurl
-    eclipse-paho-mqtt-c::paho-mqtt3as-static)
+    eclipse-paho-mqtt-c::paho-mqtt3as-static
+    websockets)

@@ -1,7 +1,7 @@
 {
 	"InstallScripts" : 
 	[
-		"/Users/kenny/Projects/sample/build/cmake_install.cmake"
+		"/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

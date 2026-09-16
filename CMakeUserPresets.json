@@ -5,6 +5,8 @@
     },
     "include": [
         "build/Debug/generators/CMakePresets.json",
-        "build-android/build/Release/generators/CMakePresets.json"
+        "build-android/build/Release/generators/CMakePresets.json",
+        "build/macos/build/Release/generators/CMakePresets.json",
+        "build/android/build/Release/generators/CMakePresets.json"
     ]
 }

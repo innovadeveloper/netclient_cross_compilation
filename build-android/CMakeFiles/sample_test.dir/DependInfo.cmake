@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/kenny/Projects/sample/main.cpp" "CMakeFiles/sample_test.dir/main.cpp.o" "gcc" "CMakeFiles/sample_test.dir/main.cpp.o.d"
+  "/Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp" "CMakeFiles/sample_test.dir/main.cpp.o" "gcc" "CMakeFiles/sample_test.dir/main.cpp.o.d"
   "" "sample_test" "gcc" "CMakeFiles/sample_test.dir/link.d"
   )
 

@@ -3,5 +3,6 @@ message(STATUS "Conan: It is recommended to use explicit find_package() per depe
 
 find_package(CURL)
 find_package(eclipse-paho-mqtt-c)
+find_package(Libwebsockets)
 
-set(CONANDEPS_LEGACY  CURL::libcurl  eclipse-paho-mqtt-c::paho-mqtt3as-static )
+set(CONANDEPS_LEGACY  CURL::libcurl  eclipse-paho-mqtt-c::paho-mqtt3as-static  websockets )

@@ -164,18 +164,18 @@ else()
 set(CMAKE_FIND_PACKAGE_PREFER_CONFIG ON)
 
 # Definition of CMAKE_MODULE_PATH
-list(PREPEND CMAKE_MODULE_PATH "/Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/lib/cmake")
+list(PREPEND CMAKE_MODULE_PATH "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib/cmake" "/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/cmake")
 # the generators folder (where conan generates files, like this toolchain)
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The explicitly defined "builddirs" of "host" context dependencies must be in PREFIX_PATH
-list(PREPEND CMAKE_PREFIX_PATH "/Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/lib/cmake")
+list(PREPEND CMAKE_PREFIX_PATH "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib/cmake" "/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/cmake")
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "/Users/kenny/.conan2/p/b/libcud975aa2d598dc/p/lib" "/Users/kenny/.conan2/p/b/paho-3392de7c24012/p/lib" "/Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/lib" "/Users/kenny/.conan2/p/b/zlib7e0892c57b232/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/Users/kenny/.conan2/p/b/libcud975aa2d598dc/p/include" "/Users/kenny/.conan2/p/b/paho-3392de7c24012/p/include" "/Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/include" "/Users/kenny/.conan2/p/b/zlib7e0892c57b232/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "/Users/kenny/.conan2/p/b/libcud975aa2d598dc/p/lib" "/Users/kenny/.conan2/p/b/paho-3392de7c24012/p/lib" "/Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/lib" "/Users/kenny/.conan2/p/b/zlib7e0892c57b232/p/lib" )
+list(PREPEND CMAKE_LIBRARY_PATH "/Users/mac/.conan2/p/b/libcub8363b7bcfac1/p/lib" "/Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/lib" "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib" "/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib" "/Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "/Users/mac/.conan2/p/b/libcub8363b7bcfac1/p/include" "/Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/include" "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include" "/Users/mac/.conan2/p/b/opens1d914808d9307/p/include" "/Users/mac/.conan2/p/b/zlib2f27e0b128793/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "/Users/mac/.conan2/p/b/libcub8363b7bcfac1/p/lib" "/Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/lib" "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib" "/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib" "/Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib" )
 
 endif()
 

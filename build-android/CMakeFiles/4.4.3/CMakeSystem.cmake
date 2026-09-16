@@ -1,9 +1,9 @@
-set(CMAKE_HOST_SYSTEM "Darwin-23.3.0")
+set(CMAKE_HOST_SYSTEM "Darwin-24.5.0")
 set(CMAKE_HOST_SYSTEM_NAME "Darwin")
-set(CMAKE_HOST_SYSTEM_VERSION "23.3.0")
+set(CMAKE_HOST_SYSTEM_VERSION "24.5.0")
 set(CMAKE_HOST_SYSTEM_PROCESSOR "arm64")
 
-include("/Users/kenny/Projects/sample/build-android/build/Release/generators/conan_toolchain.cmake")
+include("/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators/conan_toolchain.cmake")
 
 set(CMAKE_SYSTEM "Android-1")
 set(CMAKE_SYSTEM_NAME "Android")

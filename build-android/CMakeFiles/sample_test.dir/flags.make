@@ -4,7 +4,7 @@
 # compile CXX with /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
 CXX_DEFINES = -DCURL_STATICLIB=1
 
-CXX_INCLUDES = -I/Users/kenny/Projects/sample/include -isystem /Users/kenny/.conan2/p/b/libcudb8c2066c865f/p/include -isystem /Users/kenny/.conan2/p/b/opens2e34e79576f2f/p/include -isystem /Users/kenny/.conan2/p/b/paho-afee0ab2964a4/p/include
+CXX_INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -isystem /Users/mac/.conan2/p/b/libcu9fc8a470d3116/p/include -isystem /Users/mac/.conan2/p/b/opens51be86cd5f875/p/include -isystem /Users/mac/.conan2/p/b/paho-8e7514c758216/p/include -isystem /Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/include
 
 CXX_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIE
 

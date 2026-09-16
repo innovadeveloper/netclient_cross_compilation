@@ -53,10 +53,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/kenny/Projects/sample
+CMAKE_SOURCE_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/kenny/Projects/sample/build-android
+CMAKE_BINARY_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android
 
 # Include any dependencies generated for this target.
 include CMakeFiles/sample.dir/depend.make
@@ -73,32 +73,32 @@ CMakeFiles/sample.dir/codegen:
 .PHONY : CMakeFiles/sample.dir/codegen
 
 CMakeFiles/sample.dir/src/sample.cpp.o: CMakeFiles/sample.dir/flags.make
-CMakeFiles/sample.dir/src/sample.cpp.o: /Users/kenny/Projects/sample/src/sample.cpp
+CMakeFiles/sample.dir/src/sample.cpp.o: /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp
 CMakeFiles/sample.dir/src/sample.cpp.o: CMakeFiles/sample.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenny/Projects/sample/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample.dir/src/sample.cpp.o"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/src/sample.cpp.o -MF CMakeFiles/sample.dir/src/sample.cpp.o.d -o CMakeFiles/sample.dir/src/sample.cpp.o -c /Users/kenny/Projects/sample/src/sample.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sample.dir/src/sample.cpp.o"
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/src/sample.cpp.o -MF CMakeFiles/sample.dir/src/sample.cpp.o.d -o CMakeFiles/sample.dir/src/sample.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp
 
 CMakeFiles/sample.dir/src/sample.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample.dir/src/sample.cpp.i"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenny/Projects/sample/src/sample.cpp > CMakeFiles/sample.dir/src/sample.cpp.i
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp > CMakeFiles/sample.dir/src/sample.cpp.i
 
 CMakeFiles/sample.dir/src/sample.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample.dir/src/sample.cpp.s"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenny/Projects/sample/src/sample.cpp -o CMakeFiles/sample.dir/src/sample.cpp.s
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp -o CMakeFiles/sample.dir/src/sample.cpp.s
 
 CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o: CMakeFiles/sample.dir/flags.make
-CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o: /Users/kenny/Projects/sample/src/platform/android/transport_android.cpp
+CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o: /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/android/transport_android.cpp
 CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o: CMakeFiles/sample.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kenny/Projects/sample/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o -MF CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o.d -o CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o -c /Users/kenny/Projects/sample/src/platform/android/transport_android.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o"
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o -MF CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o.d -o CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/android/transport_android.cpp
 
 CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.i"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/kenny/Projects/sample/src/platform/android/transport_android.cpp > CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.i
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/android/transport_android.cpp > CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.i
 
 CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.s"
-	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/kenny/Projects/sample/src/platform/android/transport_android.cpp -o CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.s
+	/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/android/transport_android.cpp -o CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.s
 
 # Object files for target sample
 sample_OBJECTS = \
@@ -113,7 +113,7 @@ libsample.so: CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o
 libsample.so: CMakeFiles/sample.dir/build.make
 libsample.so: CMakeFiles/sample.dir/compiler_depend.ts
 libsample.so: CMakeFiles/sample.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kenny/Projects/sample/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libsample.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library libsample.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sample.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -125,6 +125,6 @@ CMakeFiles/sample.dir/clean:
 .PHONY : CMakeFiles/sample.dir/clean
 
 CMakeFiles/sample.dir/depend:
-	cd /Users/kenny/Projects/sample/build-android && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/kenny/Projects/sample /Users/kenny/Projects/sample /Users/kenny/Projects/sample/build-android /Users/kenny/Projects/sample/build-android /Users/kenny/Projects/sample/build-android/CMakeFiles/sample.dir/DependInfo.cmake "--color=$(COLOR)" sample
+	cd /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/mac/Projects/C++Projects/netclient_cross_compilation /Users/mac/Projects/C++Projects/netclient_cross_compilation /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/sample.dir/DependInfo.cmake "--color=$(COLOR)" sample
 .PHONY : CMakeFiles/sample.dir/depend
 

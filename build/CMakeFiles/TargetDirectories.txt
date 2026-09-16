@@ -1,4 +1,4 @@
-/Users/kenny/Projects/sample/build/CMakeFiles/sample.dir
-/Users/kenny/Projects/sample/build/CMakeFiles/sample_test.dir
-/Users/kenny/Projects/sample/build/CMakeFiles/edit_cache.dir
-/Users/kenny/Projects/sample/build/CMakeFiles/rebuild_cache.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/sample.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/sample_test.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/edit_cache.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/rebuild_cache.dir

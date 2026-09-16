@@ -1,2 +1,2 @@
 CMakeFiles/sample.dir/src/sample.cpp.o: \
-  /Users/kenny/Projects/sample/src/sample.cpp
+  /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp

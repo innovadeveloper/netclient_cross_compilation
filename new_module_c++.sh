@@ -54,6 +54,45 @@ guide() {
 ──────────────────────────────────────────────────────────────────────────────
 ▌ COMANDOS MANUALES  (ejecuta desde dentro de la carpeta del módulo)
 
+  # 0. Configurar Conan (si no lo has hecho antes):
+```bash
+mkdir -p ~/.conan2/profiles
+cat > ~/.conan2/profiles/default << 'EOF'
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=gnu17
+compiler.libcxx=libc++
+compiler.version=15
+os=Macos
+EOF
+
+cat > ~/.conan2/profiles/android_armv8 << 'EOF'
+[settings]
+arch=armv8
+build_type=Release
+compiler=clang
+compiler.cppstd=17
+compiler.libcxx=c++_shared
+compiler.version=17
+os=Android
+os.api_level=24
+
+[conf]
+tools.android:ndk_path=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
+
+[buildenv]
+PATH+=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin
+EOF
+```
+    ```bash
+    conan profile list
+    conan profile show -pr=android_armv8
+    conan profile show -pr=default
+    ```
+
+
   # 1. Instalar dependencias (Conan):
   conan install . --build=missing -s build_type=Debug
 

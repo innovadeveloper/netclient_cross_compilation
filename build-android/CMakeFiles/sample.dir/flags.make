@@ -4,7 +4,7 @@
 # compile CXX with /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++
 CXX_DEFINES = -Dsample_EXPORTS
 
-CXX_INCLUDES = -I/Users/kenny/Projects/sample/include -I/Users/kenny/Projects/sample/src
+CXX_INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src
 
 CXX_FLAGS = -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIC
 

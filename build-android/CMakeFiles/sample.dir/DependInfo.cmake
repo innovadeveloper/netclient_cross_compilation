@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/kenny/Projects/sample/src/platform/android/transport_android.cpp" "CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o" "gcc" "CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o.d"
-  "/Users/kenny/Projects/sample/src/sample.cpp" "CMakeFiles/sample.dir/src/sample.cpp.o" "gcc" "CMakeFiles/sample.dir/src/sample.cpp.o.d"
+  "/Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/android/transport_android.cpp" "CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o" "gcc" "CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o.d"
+  "/Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp" "CMakeFiles/sample.dir/src/sample.cpp.o" "gcc" "CMakeFiles/sample.dir/src/sample.cpp.o.d"
   "" "libsample.so" "gcc" "CMakeFiles/sample.dir/link.d"
   )
 
