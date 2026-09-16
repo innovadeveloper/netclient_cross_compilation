@@ -1,0 +1,4 @@
+/Users/kenny/Projects/sample/build-android/CMakeFiles/sample.dir
+/Users/kenny/Projects/sample/build-android/CMakeFiles/sample_test.dir
+/Users/kenny/Projects/sample/build-android/CMakeFiles/edit_cache.dir
+/Users/kenny/Projects/sample/build-android/CMakeFiles/rebuild_cache.dir

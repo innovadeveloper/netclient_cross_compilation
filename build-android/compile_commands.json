@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/kenny/Projects/sample/build-android",
+  "command": "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dsample_EXPORTS -I/Users/kenny/Projects/sample/include -I/Users/kenny/Projects/sample/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIC -o CMakeFiles/sample.dir/src/sample.cpp.o -c /Users/kenny/Projects/sample/src/sample.cpp",
+  "file": "/Users/kenny/Projects/sample/src/sample.cpp",
+  "output": "CMakeFiles/sample.dir/src/sample.cpp.o"
+},
+{
+  "directory": "/Users/kenny/Projects/sample/build-android",
+  "command": "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Dsample_EXPORTS -I/Users/kenny/Projects/sample/include -I/Users/kenny/Projects/sample/src -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIC -o CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o -c /Users/kenny/Projects/sample/src/platform/android/transport_android.cpp",
+  "file": "/Users/kenny/Projects/sample/src/platform/android/transport_android.cpp",
+  "output": "CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o"
+},
+{
+  "directory": "/Users/kenny/Projects/sample/build-android",
+  "command": "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --sysroot=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -DCURL_STATICLIB=1 -I/Users/kenny/Projects/sample/include -isystem /Users/kenny/.conan2/p/b/libcudb8c2066c865f/p/include -isystem /Users/kenny/.conan2/p/b/opens2e34e79576f2f/p/include -isystem /Users/kenny/.conan2/p/b/paho-afee0ab2964a4/p/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security   -O3 -DNDEBUG  -std=c++17 -fPIE -o CMakeFiles/sample_test.dir/main.cpp.o -c /Users/kenny/Projects/sample/main.cpp",
+  "file": "/Users/kenny/Projects/sample/main.cpp",
+  "output": "CMakeFiles/sample_test.dir/main.cpp.o"
+}
+]

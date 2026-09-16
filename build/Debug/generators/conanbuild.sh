@@ -1,0 +1,1 @@
+. "/Users/kenny/Projects/sample/build/Debug/generators/conanbuildenv-debug-armv8.sh"

@@ -1,0 +1,4 @@
+/Users/kenny/Projects/sample/build/CMakeFiles/sample.dir
+/Users/kenny/Projects/sample/build/CMakeFiles/sample_test.dir
+/Users/kenny/Projects/sample/build/CMakeFiles/edit_cache.dir
+/Users/kenny/Projects/sample/build/CMakeFiles/rebuild_cache.dir

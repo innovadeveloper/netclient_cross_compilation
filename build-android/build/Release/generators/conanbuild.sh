@@ -1,0 +1,1 @@
+. "/Users/kenny/Projects/sample/build-android/build/Release/generators/conanbuildenv-release-armv8.sh"

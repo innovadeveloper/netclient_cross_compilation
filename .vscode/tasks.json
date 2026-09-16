@@ -1,0 +1,53 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "sample: conan install",
+            "type": "shell",
+            "command": "conan install . --build=missing -s build_type=Debug",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "sample: cmake configure",
+            "type": "shell",
+            "command": "rm -rf build/CMakeCache.txt build/CMakeFiles && cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=build/Debug/generators/conan_toolchain.cmake -DCMAKE_PREFIX_PATH=build/Debug/generators -DCMAKE_BUILD_TYPE=Debug -G Ninja",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "sample: conan install",
+            "problemMatcher": [],
+            "group": "build"
+        },
+        {
+            "label": "sample: cmake build",
+            "type": "shell",
+            "command": "cmake --build build",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "dependsOn": "sample: cmake configure",
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        },
+        {
+            "label": "sample: cmake build fast",
+            "type": "shell",
+            "command": "cmake --build build",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"],
+            "group": {
+                "kind": "build",
+                "isDefault": false
+            }
+        }
+    ]
+}

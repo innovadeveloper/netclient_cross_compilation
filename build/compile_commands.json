@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/Users/kenny/Projects/sample/build",
+  "command": "/usr/bin/c++ -Dsample_EXPORTS -I/Users/kenny/Projects/sample/include -I/Users/kenny/Projects/sample/src -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/sample.dir/src/sample.cpp.o -c /Users/kenny/Projects/sample/src/sample.cpp",
+  "file": "/Users/kenny/Projects/sample/src/sample.cpp",
+  "output": "/Users/kenny/Projects/sample/build/CMakeFiles/sample.dir/src/sample.cpp.o"
+},
+{
+  "directory": "/Users/kenny/Projects/sample/build",
+  "command": "/usr/bin/c++ -Dsample_EXPORTS -I/Users/kenny/Projects/sample/include -I/Users/kenny/Projects/sample/src -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o -c /Users/kenny/Projects/sample/src/platform/macos/transport_macos.cpp",
+  "file": "/Users/kenny/Projects/sample/src/platform/macos/transport_macos.cpp",
+  "output": "/Users/kenny/Projects/sample/build/CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o"
+},
+{
+  "directory": "/Users/kenny/Projects/sample/build",
+  "command": "/usr/bin/c++ -DCURL_STATICLIB=1 -I/Users/kenny/Projects/sample/include -isystem /Users/kenny/.conan2/p/b/libcud975aa2d598dc/p/include -isystem /Users/kenny/.conan2/p/b/paho-3392de7c24012/p/include -isystem /Users/kenny/.conan2/p/b/opensfeaed00770fdd/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/sample_test.dir/main.cpp.o -c /Users/kenny/Projects/sample/main.cpp",
+  "file": "/Users/kenny/Projects/sample/main.cpp",
+  "output": "/Users/kenny/Projects/sample/build/CMakeFiles/sample_test.dir/main.cpp.o"
+}
+]
