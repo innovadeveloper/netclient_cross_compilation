@@ -17,6 +17,9 @@ find_package(eclipse-paho-mqtt-c CONFIG REQUIRED)
 find_package(Libwebsockets CONFIG REQUIRED)
 
 
+target_sources(sample PRIVATE src/websocket/lws_websocket_client.cpp)
+target_link_libraries(sample PRIVATE websockets)
+
 if(APPLE)
     message(STATUS "sample: backend macos")
     target_sources(sample PRIVATE src/platform/macos/transport_macos.cpp)

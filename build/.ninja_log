@@ -1,15 +1,14 @@
 # ninja log v7
-8	41	1789594090351512586	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	ea618fbef57b1778
-6	342	1789593756853140314	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-8	39	1789594090351254127	CMakeFiles/sample.dir/src/sample.cpp.o	c9da3f3960478bd2
-41	80	1789594090384024367	libsample.dylib	17a7257c32608eb9
-342	450	1789593757189150074	sample_test	edf9cdb5407e4054
-5	38	1789594146906589354	CMakeFiles/sample.dir/src/sample.cpp.o	c9da3f3960478bd2
 6	39	1789594146906859813	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	ea618fbef57b1778
-39	78	1789594146939944386	libsample.dylib	17a7257c32608eb9
-6	446	1789594146907080854	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-447	541	1789594147348073396	sample_test	edf9cdb5407e4054
-6	443	1789594233866451079	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-443	524	1789594234303384285	sample_test	edf9cdb5407e4054
 6	427	1789594328630020141	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
+5	38	1789594146906589354	CMakeFiles/sample.dir/src/sample.cpp.o	c9da3f3960478bd2
+39	78	1789594146939944386	libsample.dylib	17a7257c32608eb9
 428	515	1789594329051007955	sample_test	edf9cdb5407e4054
+6	36	1789597301303756484	CMakeFiles/sample.dir/src/sample.cpp.o	44093ace9ec29cbd
+6	37	1789597301304070066	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	e2a4a9cc3912cd7d
+6	432	1789597301303949358	CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o	3e4e3b9756e520e5
+6	443	1789597301304186358	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
+432	546	1789597301730148500	libsample.dylib	c84d2a8401f991de
+546	612	1789597301844266763	sample_test	edf9cdb5407e4054
+7	356	1789597385437961099	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
+356	458	1789597385787882007	sample_test	edf9cdb5407e4054

@@ -1,0 +1,1 @@
+. "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators/conanbuildenv-release-armv8.sh"

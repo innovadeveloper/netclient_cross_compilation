@@ -2,7 +2,7 @@
 
 Según la documentación y los issues del proyecto, **la reconexión es responsabilidad de la aplicación** en la API lowlevel.
 
-### 🔧 ¿Qué significa esto?
+###  ¿Qué significa esto?
 
 Cuando usas `lws_client_connect_via_info()` y la conexión falla o se cierra, el objeto `wsi` (WebSocket Instance) que representa esa conexión **se destruye**. Si quieres reconectar, tu código debe crear un **nuevo `wsi`** desde cero, con todos los parámetros de conexión de nuevo.
 

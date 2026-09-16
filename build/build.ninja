@@ -54,9 +54,21 @@ build CMakeFiles/sample.dir/src/sample.cpp.o: CXX_COMPILER__sample_unscanned_Deb
   DEFINES = -Dsample_EXPORTS
   DEP_FILE = CMakeFiles/sample.dir/src/sample.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC
-  INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src
+  INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/src
+  TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
+  TARGET_PDB = libsample.pdb
+  TARGET_SUPPORT_DIR = CMakeFiles/sample.dir
+
+build CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o: CXX_COMPILER__sample_unscanned_Debug /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp || cmake_object_order_depends_target_sample
+  CONFIG = Debug
+  DEFINES = -Dsample_EXPORTS
+  DEP_FILE = CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o.d
+  FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC
+  INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include
+  OBJECT_DIR = CMakeFiles/sample.dir
+  OBJECT_FILE_DIR = CMakeFiles/sample.dir/src/websocket
   TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
   TARGET_PDB = libsample.pdb
   TARGET_SUPPORT_DIR = CMakeFiles/sample.dir
@@ -66,7 +78,7 @@ build CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o: CXX_COMPIL
   DEFINES = -Dsample_EXPORTS
   DEP_FILE = CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o.d
   FLAGS = -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC
-  INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src
+  INCLUDES = -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include
   OBJECT_DIR = CMakeFiles/sample.dir
   OBJECT_FILE_DIR = CMakeFiles/sample.dir/src/platform/macos
   TARGET_COMPILE_PDB = CMakeFiles/sample.dir/
@@ -81,12 +93,14 @@ build CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o: CXX_COMPIL
 #############################################
 # Link the shared library libsample.dylib
 
-build libsample.dylib: CXX_SHARED_LIBRARY_LINKER__sample_Debug CMakeFiles/sample.dir/src/sample.cpp.o CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o
+build libsample.dylib: CXX_SHARED_LIBRARY_LINKER__sample_Debug CMakeFiles/sample.dir/src/sample.cpp.o CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o | /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib/libwebsockets.a /Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/libssl.a /Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/libcrypto.a /Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib/libz.a
   ARCH_FLAGS = -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk
   CONFIG = Debug
   INSTALLNAME_DIR = @rpath/
   LANGUAGE_COMPILE_FLAGS = -stdlib=libc++ -g
   LINK_FLAGS = -dynamiclib -Wl,-headerpad_max_install_names
+  LINK_LIBRARIES = -Wl,-rpath,/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib -Wl,-rpath,/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib -Wl,-rpath,/Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib  /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib/libwebsockets.a  /Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/libssl.a  /Users/mac/.conan2/p/b/opens1d914808d9307/p/lib/libcrypto.a  /Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib/libz.a
+  LINK_PATH = -L/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/lib   -L/Users/mac/.conan2/p/b/opens1d914808d9307/p/lib   -L/Users/mac/.conan2/p/b/zlib2f27e0b128793/p/lib
   OBJECT_DIR = CMakeFiles/sample.dir
   POST_BUILD = :
   PRE_LINK = :

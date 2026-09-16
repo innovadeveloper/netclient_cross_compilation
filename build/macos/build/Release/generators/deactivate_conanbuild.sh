@@ -1,0 +1,1 @@
+. "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/macos/build/Release/generators/deactivate_conanbuildenv-release-armv8.sh"

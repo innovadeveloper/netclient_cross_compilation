@@ -1,0 +1,47 @@
+{
+    "version": 3,
+    "vendor": {
+        "conan": {}
+    },
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 15,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "conan-release",
+            "displayName": "'conan-release' config",
+            "description": "'conan-release' configure using 'Unix Makefiles' generator",
+            "generator": "Unix Makefiles",
+            "cacheVariables": {
+                "CMAKE_POLICY_DEFAULT_CMP0091": "NEW",
+                "CMAKE_BUILD_TYPE": "Release"
+            },
+            "environment": {
+                "PATH": "$penv{PATH} /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin"
+            },
+            "toolchainFile": "generators/conan_toolchain.cmake",
+            "binaryDir": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "jobs": 10
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "conan-release",
+            "configurePreset": "conan-release",
+            "execution": {
+                "jobs": 10
+            },
+            "environment": {
+                "OPENSSL_MODULES": "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/ossl-modules"
+            }
+        }
+    ]
+}
