@@ -1,0 +1,114 @@
+{
+	"abstract" : true,
+	"artifacts" : 
+	[
+		{
+			"path" : "/Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/lib/libpaho-mqtt3as.a"
+		}
+	],
+	"backtrace" : 8,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"conan_package_library_targets",
+			"include",
+			"find_package",
+			"set_property"
+		],
+		"files" : 
+		[
+			"build/Debug/generators/cmakedeps_macros.cmake",
+			"build/Debug/generators/eclipse-paho-mqtt-c-Target-debug.cmake",
+			"build/Debug/generators/eclipse-paho-mqtt-cTargets.cmake",
+			"build/Debug/generators/eclipse-paho-mqtt-c-config.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 16,
+				"parent" : 0
+			},
+			{
+				"file" : 3,
+				"parent" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 3,
+				"line" : 16,
+				"parent" : 2
+			},
+			{
+				"file" : 2,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 24,
+				"parent" : 4
+			},
+			{
+				"file" : 1,
+				"parent" : 5
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 60,
+				"parent" : 6
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 73,
+				"parent" : 7
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 88,
+				"parent" : 7
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	},
+	"id" : "CONAN_LIB::paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_paho-mqtt3as_DEBUG::@6890427a1f51a3e7e1df",
+	"imported" : true,
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_DEPS_TARGET::@6890427a1f51a3e7e1df"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 9,
+			"id" : "paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_DEPS_TARGET::@6890427a1f51a3e7e1df"
+		}
+	],
+	"local" : true,
+	"name" : "CONAN_LIB::paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_paho-mqtt3as_DEBUG",
+	"nameOnDisk" : "libpaho-mqtt3as.a",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sources" : [],
+	"type" : "STATIC_LIBRARY"
+}

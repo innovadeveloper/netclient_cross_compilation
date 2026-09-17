@@ -1,0 +1,4 @@
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug/CMakeFiles/sample.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug/CMakeFiles/sample_test.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug/CMakeFiles/edit_cache.dir
+/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug/CMakeFiles/rebuild_cache.dir

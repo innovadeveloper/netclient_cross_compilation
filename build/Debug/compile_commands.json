@@ -1,0 +1,26 @@
+[
+{
+  "directory": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug",
+  "command": "/usr/bin/c++ -Dsample_EXPORTS -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/sample.dir/src/sample.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
+  "file": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
+  "output": "CMakeFiles/sample.dir/src/sample.cpp.o"
+},
+{
+  "directory": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug",
+  "command": "/usr/bin/c++ -Dsample_EXPORTS -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
+  "file": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
+  "output": "CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o"
+},
+{
+  "directory": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug",
+  "command": "/usr/bin/c++ -Dsample_EXPORTS -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
+  "file": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
+  "output": "CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o"
+},
+{
+  "directory": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug",
+  "command": "/usr/bin/c++ -DCURL_STATICLIB=1 -I/Users/mac/Projects/C++Projects/netclient_cross_compilation/include -isystem /Users/mac/.conan2/p/b/libcub8363b7bcfac1/p/include -isystem /Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/sample_test.dir/main.cpp.o -c /Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp",
+  "file": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/main.cpp",
+  "output": "CMakeFiles/sample_test.dir/main.cpp.o"
+}
+]

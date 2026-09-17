@@ -1,0 +1,330 @@
+{
+	"configurations" : 
+	[
+		{
+			"abstractTargets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::libcurl_CURL_libcurl_curl_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__libcurl_CURL_libcurl_curl_DEBUG-Debug-3b7866602b1d4c15d172.json",
+					"name" : "CONAN_LIB::libcurl_CURL_libcurl_curl_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::libcurl_curl_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__libcurl_curl_DEBUG-Debug-cbd4afd06adee1590065.json",
+					"name" : "CONAN_LIB::libcurl_curl_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::libwebsockets_websockets_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__libwebsockets_websockets_DEBUG-Debug-9940d57e66bdf8391f5d.json",
+					"name" : "CONAN_LIB::libwebsockets_websockets_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::libwebsockets_websockets_websockets_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__libwebsockets_websockets_websockets_DEBUG-Debug-3653295d8c81ca7a302f.json",
+					"name" : "CONAN_LIB::libwebsockets_websockets_websockets_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::openssl_OpenSSL_Crypto_crypto_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__openssl_OpenSSL_Crypto_crypto_DEBUG-Debug-6cc52ffffd0b1d88bd86.json",
+					"name" : "CONAN_LIB::openssl_OpenSSL_Crypto_crypto_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::openssl_OpenSSL_SSL_ssl_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__openssl_OpenSSL_SSL_ssl_DEBUG-Debug-65305ebecfe9bc7922b3.json",
+					"name" : "CONAN_LIB::openssl_OpenSSL_SSL_ssl_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::openssl_crypto_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__openssl_crypto_DEBUG-Debug-d4d2e7bc3c2449ace98e.json",
+					"name" : "CONAN_LIB::openssl_crypto_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::openssl_ssl_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__openssl_ssl_DEBUG-Debug-abd48cee993d431fea7c.json",
+					"name" : "CONAN_LIB::openssl_ssl_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_paho-mqtt3as_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_paho-mqtt3as_DEBUG-Debug-1ecdf5a0c46f0fc8d2f9.json",
+					"name" : "CONAN_LIB::paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_paho-mqtt3as_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::paho-mqtt-c_paho-mqtt3as_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__paho-mqtt-c_paho-mqtt3as_DEBUG-Debug-8daaaeb76ce881c51153.json",
+					"name" : "CONAN_LIB::paho-mqtt-c_paho-mqtt3as_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CONAN_LIB::zlib_z_DEBUG::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CONAN_LIB__zlib_z_DEBUG-Debug-bdf2e52bbd3bdf98d144.json",
+					"name" : "CONAN_LIB::zlib_z_DEBUG",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "CURL::libcurl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-CURL__libcurl-Debug-0b9f575e34cefbcf3339.json",
+					"name" : "CURL::libcurl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenSSL::Crypto::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenSSL__Crypto-Debug-66b5c2ed5effb601797e.json",
+					"name" : "OpenSSL::Crypto",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "OpenSSL::SSL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-OpenSSL__SSL-Debug-71654e42ec5a41fdaa83.json",
+					"name" : "OpenSSL::SSL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ZLIB::ZLIB::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ZLIB__ZLIB-Debug-df5a6d6c99d3c7e1b91a.json",
+					"name" : "ZLIB::ZLIB",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "eclipse-paho-mqtt-c::paho-mqtt3as-static::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-eclipse-paho-mqtt-c__paho-mqtt3as-static-Debug-fb821dbe116ee2edbbdc.json",
+					"name" : "eclipse-paho-mqtt-c::paho-mqtt3as-static",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libcurl_CURL_libcurl_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libcurl_CURL_libcurl_DEPS_TARGET-Debug-9ebead5dd85edcdcf691.json",
+					"name" : "libcurl_CURL_libcurl_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libcurl_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libcurl_DEPS_TARGET-Debug-d5b179522f964b897cce.json",
+					"name" : "libcurl_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libwebsockets_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libwebsockets_DEPS_TARGET-Debug-e72f6fc5fbea682800b9.json",
+					"name" : "libwebsockets_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "libwebsockets_websockets_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-libwebsockets_websockets_DEPS_TARGET-Debug-4e4e7d7f323d30193f5a.json",
+					"name" : "libwebsockets_websockets_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openssl::openssl::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openssl__openssl-Debug-722b6bff78db4a9887de.json",
+					"name" : "openssl::openssl",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openssl_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openssl_DEPS_TARGET-Debug-c74a1be93cc02510ddf6.json",
+					"name" : "openssl_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openssl_OpenSSL_Crypto_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openssl_OpenSSL_Crypto_DEPS_TARGET-Debug-9b403a8e93865db066f2.json",
+					"name" : "openssl_OpenSSL_Crypto_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "openssl_OpenSSL_SSL_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-openssl_OpenSSL_SSL_DEPS_TARGET-Debug-bdb0808a6012fb47738c.json",
+					"name" : "openssl_OpenSSL_SSL_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paho-mqtt-c_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paho-mqtt-c_DEPS_TARGET-Debug-dcf8782d420741ad4cb3.json",
+					"name" : "paho-mqtt-c_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_DEPS_TARGET-Debug-317e77ec1227d8a23f8e.json",
+					"name" : "paho-mqtt-c_eclipse-paho-mqtt-c_paho-mqtt3as-static_DEPS_TARGET",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "websockets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-websockets-Debug-0c082d2ee97495194bf8.json",
+					"name" : "websockets",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "zlib_DEPS_TARGET::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-zlib_DEPS_TARGET-Debug-faa2ca6bfdde4f0365ff.json",
+					"name" : "zlib_DEPS_TARGET",
+					"projectIndex" : 0
+				}
+			],
+			"directories" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					],
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-b23a0b23c080df4d29ba.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"abstractTargetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18,
+						19,
+						20,
+						21,
+						22,
+						23,
+						24,
+						25,
+						26,
+						27
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "sample",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "sample::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sample-Debug-47dc0e7418cd315e4834.json",
+					"name" : "sample",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sample_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sample_test-Debug-bf8f023668f888dcac70.json",
+					"name" : "sample_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug",
+		"source" : "/Users/mac/Projects/C++Projects/netclient_cross_compilation"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 11
+	}
+}
