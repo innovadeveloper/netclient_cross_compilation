@@ -1,10 +1,10 @@
 #include "../../transport/transport.h"
 
 // Implementación del transporte para android
-namespace sample {
+namespace system_sora {
 
 void platform_init() {
     // TODO: inicialización específica de android
 }
 
-} // namespace sample
+} // namespace system_sora

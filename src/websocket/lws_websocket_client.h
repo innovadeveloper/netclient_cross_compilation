@@ -8,14 +8,16 @@
 
 #include <libwebsockets.h>
 
-#include "sample/websocket/i_websocket_client.h"
+#include "system_sora/websocket/i_websocket_client.h"
 
-namespace sample::websocket {
+namespace system_sora::websocket {
 
 // Implementacion concreta de IWebSocketClient sobre libwebsockets.
 // Maneja su propio hilo de servicio y reintentos de conexion con backoff
 // exponencial. No se expone en include/ a proposito: los consumidores solo
 // deben conocer IWebSocketClient (ver websocket_client_factory.h).
+static constexpr size_t kWsBufferSize = 65536;
+
 class LwsWebSocketClient final : public IWebSocketClient {
 public:
     LwsWebSocketClient();
@@ -37,7 +39,7 @@ public:
 
 private:
     struct PerSessionData {
-        char send_buffer[LWS_PRE + 4096];
+        char send_buffer[LWS_PRE + kWsBufferSize];
     };
 
     struct ParsedUrl {
@@ -81,4 +83,4 @@ private:
     int reconnectAttempts_ = 0;
 };
 
-} // namespace sample::websocket
+} // namespace system_sora::websocket

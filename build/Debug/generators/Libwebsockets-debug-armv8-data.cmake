@@ -13,7 +13,7 @@ set(OpenSSL_FIND_MODE "NO_MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(libwebsockets_PACKAGE_FOLDER_DEBUG "/Users/mac/.conan2/p/b/libwe77bc7b2857d41/p")
+set(libwebsockets_PACKAGE_FOLDER_DEBUG "/Users/kenny/.conan2/p/b/libwe728a5305340ca/p")
 set(libwebsockets_BUILD_MODULES_PATHS_DEBUG )
 
 

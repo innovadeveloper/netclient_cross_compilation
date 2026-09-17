@@ -8,7 +8,7 @@
 #include <thread>
 #include <chrono>
 
-#include "sample/websocket/websocket_client_factory.h"
+#include "system_sora/websocket/websocket_client_factory.h"
 
 // CAs de Let's Encrypt embebidas en el binario (ISRG Root X1 + X2).
 // Generado con: curl https://letsencrypt.org/certs/isrgrootx1.pem
@@ -117,17 +117,17 @@ private:
 int main() {
     curl_global_init(CURL_GLOBAL_DEFAULT);
 
-    try {
-        ClienteHttp cliente;
-        std::string respuesta = cliente.get("https://minio.abexacloud.com/login");
-        std::cout << "Cuerpo de la respuesta:\n" << respuesta << "\n";
-    } catch (const std::exception& e) {
-        std::cerr << "Error: " << e.what() << "\n";
-    }
+    // try {
+    //     ClienteHttp cliente;
+    //     std::string respuesta = cliente.get("https://minio.abexacloud.com/login");
+    //     std::cout << "Cuerpo de la respuesta:\n" << respuesta << "\n";
+    // } catch (const std::exception& e) {
+    //     std::cerr << "Error: " << e.what() << "\n";
+    // }
 
-    using sample::websocket::ConnectionState;
+    using system_sora::websocket::ConnectionState;
 
-    auto ws = sample::websocket::createLwsWebSocketClient();
+    auto ws = system_sora::websocket::createLwsWebSocketClient();
 
     ws->setOnMessage([](const std::string& msg) {
         std::cout << "[WS] Mensaje recibido: " << msg << std::endl;

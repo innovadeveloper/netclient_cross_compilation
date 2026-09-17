@@ -6,9 +6,9 @@
 #include <cstring>
 #include <stdexcept>
 
-#include "sample/websocket/websocket_client_factory.h"
+#include "system_sora/websocket/websocket_client_factory.h"
 
-namespace sample::websocket {
+namespace system_sora::websocket {
 
 std::unique_ptr<IWebSocketClient> createLwsWebSocketClient() {
     return std::make_unique<LwsWebSocketClient>();
@@ -35,6 +35,11 @@ LwsWebSocketClient::ParsedUrl LwsWebSocketClient::parseUrl(const std::string& ur
     } else {
         throw std::invalid_argument("URL de WebSocket invalida (usa ws:// o wss://): " + url);
     }
+
+    // rest = "example.com:8080/chat"      → slashPos = 18
+    // rest = "example.com"                 → slashPos = npos
+    // rest = "localhost:1883/mqtt"         → slashPos = 14
+    // rest = "localhost"                   → slashPos = npos
 
     auto slashPos = rest.find('/');
     std::string hostPort = (slashPos == std::string::npos) ? rest : rest.substr(0, slashPos);
@@ -169,8 +174,10 @@ bool LwsWebSocketClient::scheduleReconnectOrFail() {
     return !stopRequested_;
 }
 
+// lws_callback_reasons — los eventos (como un switch de un EventListener)
 int LwsWebSocketClient::lwsCallbackTrampoline(struct lws* wsi, enum lws_callback_reasons reason,
                                                void* user, void* in, size_t len) {
+                        
     auto* ctx = wsi ? lws_get_context(wsi) : nullptr;
     auto* self = ctx ? static_cast<LwsWebSocketClient*>(lws_context_user(ctx)) : nullptr;
     if (!self) return 0;
@@ -247,7 +254,7 @@ int LwsWebSocketClient::lwsCallbackTrampoline(struct lws* wsi, enum lws_callback
 
 void LwsWebSocketClient::runLoop() {
     protocols_[0] = {"sample-ws-protocol", &LwsWebSocketClient::lwsCallbackTrampoline,
-                      sizeof(PerSessionData), 4096, 0, nullptr, 0};
+                      sizeof(PerSessionData), kWsBufferSize, 0, nullptr, 0};
     protocols_[1] = {nullptr, nullptr, 0, 0, 0, nullptr, 0};
 
     struct lws_context_creation_info info;
@@ -261,7 +268,7 @@ void LwsWebSocketClient::runLoop() {
         info.options |= LWS_SERVER_OPTION_DO_SSL_GLOBAL_INIT;
     }
 
-    struct lws_context* ctx = lws_create_context(&info);
+    struct lws_context* ctx = lws_create_context(&info);    // lws_context* — el "motor" global, se crea una vez
     if (!ctx) {
         setState(ConnectionState::Failed);
         notifyError("No se pudo crear el contexto de libwebsockets");
@@ -284,7 +291,7 @@ void LwsWebSocketClient::runLoop() {
         ccinfo.protocol = protocols_[0].name;
         ccinfo.ssl_connection = parsed_.use_ssl ? LCCSCF_USE_SSL : 0;
 
-        struct lws* wsi = lws_client_connect_via_info(&ccinfo);
+        struct lws* wsi = lws_client_connect_via_info(&ccinfo); // lws* (wsi) — la conexión individual
         wsi_ = wsi;
 
         if (!wsi) {
@@ -294,7 +301,7 @@ void LwsWebSocketClient::runLoop() {
         }
 
         while (!stopRequested_ && wsi_.load() && !connectionLost_) {
-            lws_service(ctx, 0);
+            lws_service(ctx, 0);    // lws_service() — el event loop (equivalente al run() de un executor en Java)
         }
 
         wsi_ = nullptr;
@@ -316,4 +323,117 @@ void LwsWebSocketClient::runLoop() {
     }
 }
 
-} // namespace sample::websocket
+} // namespace system_sora::websocket
+
+
+//   Arquitectura general
+
+//   IWebSocketClient (interfaz pura)
+//           ↑
+//   LwsWebSocketClient (implementación con libwebsockets)
+
+//   El patrón usado es interfaz + implementación concreta, lo que permite mockear el cliente en tests sin depender de libwebsockets.
+
+//   ---
+//   Tipos que quizás no reconoces
+
+//   De la STL de C++
+
+//   | Tipo                        | Descripción                                                                                 |
+//   |-----------------------------|---------------------------------------------------------------------------------------------|
+//   | std::atomic<T>              | Variable segura para acceso desde múltiples hilos sin mutex. Ej: state_, stopRequested_     |
+//   | std::deque<std::string>     | Cola doble — permite push_back y pop_front eficientes. Usada como cola de mensajes a enviar |
+//   | std::mutex                  | Mutual exclusion — previene que dos hilos accedan al mismo dato simultáneamente             |
+//   | std::lock_guard<std::mutex> | RAII: toma el mutex al construirse y lo libera automáticamente al salir del scope           |
+//   | std::thread                 | Hilo de ejecución. Aquí corre runLoop() en paralelo al hilo principal                       |
+//   | std::function<void(...)>    | Wrapper de cualquier callable (lambda, función, método). Usado para los callbacks           |
+//   | std::unique_ptr<T>          | Smart pointer — ownership exclusivo, se destruye automáticamente                            |
+//   | uint32_t                    | Entero sin signo de exactamente 32 bits (de <cstdint>)                                      |
+
+//   De libwebsockets (lws)
+
+//   | Tipo/Símbolo                     | Descripción                                                                           |
+//   |----------------------------------|---------------------------------------------------------------------------------------|
+//   | struct lws_context*              | Contexto global de libwebsockets — maneja SSL, protocolos, event loop                 |
+//   | struct lws* (wsi)                | WebSocket Instance — representa una conexión activa                                   |
+//   | struct lws_protocols             | Describe un protocolo: nombre, callback, tamaño de datos por sesión                   |
+//   | struct lws_context_creation_info | Config para crear el contexto (puertos, protocolos, SSL, etc.)                        |
+//   | struct lws_client_connect_info   | Config para iniciar una conexión cliente (host, port, path, SSL)                      |
+//   | enum lws_callback_reasons        | Enum con eventos posibles: CLIENT_ESTABLISHED, CLIENT_RECEIVE, CLIENT_WRITEABLE, etc. |
+//   | LWS_PRE                          | Bytes que lws necesita antes del payload en el buffer de escritura (cabecera interna) |
+//   | CONTEXT_PORT_NO_LISTEN           | Indica que el contexto es solo cliente, no servidor                                   |
+//   | LCCSCF_USE_SSL                   | Flag para activar TLS en la conexión                                                  |
+//   | lws_service(ctx, 0)              | Procesa eventos pendientes (el "tick" del event loop de lws)                          |
+//   | lws_cancel_service(ctx)          | Interrumpe un lws_service bloqueado desde otro hilo                                   |
+//   | lws_callback_on_writable(wsi)    | Le pide a lws que dispare CLIENT_WRITEABLE para poder escribir                        |
+//   | lws_write(...)                   | Escribe datos en el socket WebSocket                                                  |
+//   | lws_context_user(ctx)            | Recupera el puntero user que pasaste al crear el contexto (aquí, this)                |
+
+//   ---
+//   Flujo de ejecución
+
+//   connect(url)
+//     → parseUrl()
+//     → lanza std::thread → runLoop()
+//          → lws_create_context()
+//          → lws_client_connect_via_info()
+//          → loop: lws_service()  ← procesa eventos
+//               ↓
+//          lwsCallbackTrampoline()  ← llamado por lws internamente
+//               ↓
+//            switch(reason):
+//              ESTABLISHED  → setState(Connected)
+//              WRITEABLE    → saca de sendQueue_ y llama lws_write()
+//              RECEIVE      → llama onMessage_(mensaje)
+//              CLOSED       → connectionLost_ = true
+//              ERROR        → notifyError() + connectionLost_ = true
+//          ↓
+//          si connectionLost_ → scheduleReconnectOrFail()
+//               → backoff exponencial: 500ms, 1s, 2s... hasta 30s
+//               → si max_attempts agotados → Failed
+
+//   disconnect()
+//     → stopRequested_ = true
+//     → lws_cancel_service() para desbloquear el loop
+//     → worker_.join()
+
+//   ---
+//   Patrón "trampoline"
+
+//   lwsCallbackTrampoline es static porque lws espera un puntero a función C-style. Para recuperar this, se guardó this en info.user al crear el contexto, y se recupera con lws_context_user(ctx):
+
+//   // Al crear contexto:
+//   info.user = this;
+
+//   // En el callback estático:
+//   auto* self = static_cast<LwsWebSocketClient*>(lws_context_user(ctx));
+//   self->setState(...);  // ahora puede acceder a miembros de la instancia
+
+//   ---
+//   Limitaciones conocidas (del propio código)
+
+//   1. Mensajes > ~4080 bytes se descartan (no hay fragmentación de envío)
+//   2. Recepción fragmentada no se reensambla explícitamente (frames grandes podrían llegar partidos)
+
+
+// ----
+
+// ⏺ No necesariamente estudiarlos a fondo antes de continuar. La realidad práctica es:
+
+//   Lo que SÍ vale la pena entender bien ahora:
+//   - lws_context* — el "motor" global, se crea una vez
+//   - lws* (wsi) — la conexión individual
+//   - lws_service() — el event loop (equivalente al run() de un executor en Java)
+//   - lws_callback_reasons — los eventos (como un switch de un EventListener)
+
+//   Lo que puedes tratar como "caja negra" por ahora:
+//   - lws_context_creation_info / lws_client_connect_info — son structs de configuración, los llenas una vez y no los vuelves a tocar
+//   - LWS_PRE, LCCSCF_USE_SSL, CONTEXT_PORT_NO_LISTEN — constantes/flags, su nombre ya dice qué hacen
+
+//   La analogía Java que te ayuda:
+//   - lws_context ≈ ExecutorService o Selector de NIO
+//   - lws* (wsi) ≈ SocketChannel
+//   - lws_service() ≈ selector.select() en un loop
+//   - lws_callback_reasons ≈ eventos de un ChannelHandler de Netty
+
+//   Si vas a usar otra librería de red (MQTT, HTTP, etc.) los patrones son similares: contexto → conexión → event loop → callbacks. Entender el patrón aquí te va a servir directamente para las siguientes.

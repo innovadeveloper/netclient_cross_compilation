@@ -6,7 +6,7 @@
 # It is included in the main 'build.ninja'.
 
 # =============================================================================
-# Project: sample
+# Project: system_sora
 # Configurations: Debug
 # =============================================================================
 # =============================================================================
@@ -14,7 +14,7 @@
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sample_unscanned_Debug
+rule CXX_COMPILER__system_sora_ws_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -24,7 +24,7 @@ rule CXX_COMPILER__sample_unscanned_Debug
 #############################################
 # Rule for linking CXX shared library.
 
-rule CXX_SHARED_LIBRARY_LINKER__sample_Debug
+rule CXX_SHARED_LIBRARY_LINKER__system_sora_ws_Debug
   command = $PRE_LINK && /usr/bin/c++ $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -o $TARGET_FILE $SONAME_FLAG $INSTALLNAME_DIR$SONAME $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
@@ -33,7 +33,7 @@ rule CXX_SHARED_LIBRARY_LINKER__sample_Debug
 #############################################
 # Rule for compiling CXX files.
 
-rule CXX_COMPILER__sample_test_unscanned_Debug
+rule CXX_COMPILER__system_sora_ws_test_unscanned_Debug
   depfile = $DEP_FILE
   deps = gcc
   command = ${LAUNCHER}${CODE_CHECK}/usr/bin/c++ $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
@@ -43,7 +43,7 @@ rule CXX_COMPILER__sample_test_unscanned_Debug
 #############################################
 # Rule for linking CXX executable.
 
-rule CXX_EXECUTABLE_LINKER__sample_test_Debug
+rule CXX_EXECUTABLE_LINKER__system_sora_ws_test_Debug
   command = $PRE_LINK && /usr/bin/c++ $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX executable $TARGET_FILE
   restat = $RESTAT
@@ -61,7 +61,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/mac/Projects/C++Projects/netclient_cross_compilation -B/Users/mac/Projects/C++Projects/netclient_cross_compilation/build
+  command = /opt/homebrew/bin/cmake --regenerate-during-build -S/Users/kenny/Projects/C++Projects/netclient_cross_compilation -B/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build
   description = Re-running CMake...
   generator = 1
 

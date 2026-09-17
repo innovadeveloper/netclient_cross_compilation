@@ -1,14 +1,13 @@
-# ninja log v7
-6	39	1789594146906859813	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	ea618fbef57b1778
-6	427	1789594328630020141	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-5	38	1789594146906589354	CMakeFiles/sample.dir/src/sample.cpp.o	c9da3f3960478bd2
-39	78	1789594146939944386	libsample.dylib	17a7257c32608eb9
-428	515	1789594329051007955	sample_test	edf9cdb5407e4054
-6	36	1789597301303756484	CMakeFiles/sample.dir/src/sample.cpp.o	44093ace9ec29cbd
-6	37	1789597301304070066	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	e2a4a9cc3912cd7d
-6	432	1789597301303949358	CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o	3e4e3b9756e520e5
-6	443	1789597301304186358	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-432	546	1789597301730148500	libsample.dylib	c84d2a8401f991de
-546	612	1789597301844266763	sample_test	edf9cdb5407e4054
-7	356	1789597385437961099	CMakeFiles/sample_test.dir/main.cpp.o	7b30ef24eaffd408
-356	458	1789597385787882007	sample_test	edf9cdb5407e4054
+# ninja log v6
+525	596	1789665119758899362	libsample.dylib	115e71f8f1a6af8c
+4	90	1789653714227351453	CMakeFiles/sample.dir/src/sample.cpp.o	173d9231d7ec1ac3
+5	470	1789653786222191572	CMakeFiles/sample_test.dir/main.cpp.o	925f25daef936bf3
+596	663	1789665119830801277	sample_test	f67b3e711b6bb54b
+12	524	1789665119246505512	CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o	e07c74bd017bae03
+5	89	1789653714227912554	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	2d6180942b800673
+2	36	1789666402885683459	CMakeFiles/system_sora_ws.dir/src/sample.cpp.o	80f6e1e77b0ba7fc
+2	37	1789666402886034293	CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o	2f1965e814c5109c
+2	466	1789666402886162835	CMakeFiles/system_sora_ws_test.dir/main.cpp.o	e5cff77d0272d180
+2	532	1789666402885910001	CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o	c5cc0b0e7bebef75
+532	608	1789666403416400151	libsystem_sora_ws.dylib	a6aa9a5045187c95
+608	673	1789666403492468280	system_sora_ws_test	adab3ea8d2ed691d

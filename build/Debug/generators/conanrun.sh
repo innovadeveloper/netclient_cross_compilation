@@ -1,1 +1,1 @@
-. "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/Debug/generators/conanrunenv-debug-armv8.sh"
+. "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/Debug/generators/conanrunenv-debug-armv8.sh"

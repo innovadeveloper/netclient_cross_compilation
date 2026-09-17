@@ -1,10 +1,10 @@
 #include "../../transport/transport.h"
 
 // Implementación del transporte para macos
-namespace sample {
+namespace system_sora {
 
 void platform_init() {
     // TODO: inicialización específica de macos
 }
 
-} // namespace sample
+} // namespace system_sora

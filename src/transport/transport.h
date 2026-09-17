@@ -1,5 +1,5 @@
 #pragma once
 
-namespace sample {
+namespace system_sora {
     void platform_init();
-} // namespace sample
+} // namespace system_sora
