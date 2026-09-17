@@ -156,7 +156,7 @@ target_link_libraries(sora_jni
         log)
 ```
 
-> **Importante:** no declarar `jniLibs.srcDirs` en `build.gradle.kts` apuntando a `cpp/libs/`.
+> [NO SEGURO] **Importante:** no declarar `jniLibs.srcDirs` en `build.gradle.kts` apuntando a `cpp/libs/`.
 > Al usar `IMPORTED`, CMake ya empaqueta la `.so` dentro del `.aar`. Declarar ambos produce el error:
 > `2 files found with path 'lib/arm64-v8a/libsystem_sora_ws.so'`
 
@@ -176,6 +176,12 @@ android {
         cmake {
             path = file("src/main/cpp/CMakeLists.txt")
             version = "3.22.1"
+        }
+    }
+
+    sourceSets {
+        getByName("main") {
+            jniLibs.srcDirs("src/main/jniLibs")
         }
     }
 }

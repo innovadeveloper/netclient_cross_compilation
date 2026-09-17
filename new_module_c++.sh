@@ -85,28 +85,60 @@ tools.android:ndk_path=/opt/homebrew/share/android-commandlinetools/ndk/26.1.109
 [buildenv]
 PATH+=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin
 EOF
+
+
+# Android desde Linux
+
+
+1. Instalar NDK
+
+# Descargar Android NDK (r26 o superior recomendado)
+wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
+unzip android-ndk-r26d-linux.zip -d ~/android-ndk
+
+2. Crear perfil Conan para Android
+
+conan profile detect --name android-arm64
+
+Edita ~/.conan2/profiles/android-arm64:
+[settings]
+os=Android
+os.api_level=21
+arch=armv8
+compiler=clang
+compiler.version=17
+compiler.libcxx=c++_shared
+build_type=Release
+
+[conf]
+tools.android:ndk_path=/home/kendall/android-ndk/android-ndk-r26d
+
 ```
-    ```bash
-    conan profile list
-    conan profile show -pr=android_armv8
-    conan profile show -pr=default
-    ```
 
 
-  # 1. Instalar dependencias (Conan):
-  conan install . --build=missing -s build_type=Debug
 
-  # 2. Configurar (CMake + Ninja):
-  cmake -B build -S . \
-    -DCMAKE_TOOLCHAIN_FILE=build/Debug/generators/conan_toolchain.cmake \
-    -DCMAKE_PREFIX_PATH=build/Debug/generators \
-    -DCMAKE_BUILD_TYPE=Debug -G Ninja
 
-  # 3. Compilar:
-  cmake --build build
+```bash
+conan profile list
+conan profile show -pr=android_armv8
+conan profile show -pr=default
+```
 
-  # 4. Ejecutar:
-  ./build/<nombre_modulo>
+
+# 1. Instalar dependencias (Conan):
+conan install . --build=missing -s build_type=Debug
+
+# 2. Configurar (CMake + Ninja):
+cmake -B build -S . \
+-DCMAKE_TOOLCHAIN_FILE=build/Debug/generators/conan_toolchain.cmake \
+-DCMAKE_PREFIX_PATH=build/Debug/generators \
+-DCMAKE_BUILD_TYPE=Debug -G Ninja
+
+# 3. Compilar:
+cmake --build build
+
+# 4. Ejecutar:
+./build/<nombre_modulo>
 
 ──────────────────────────────────────────────────────────────────────────────
 ▌ AÑADIR DEPENDENCIAS CONAN

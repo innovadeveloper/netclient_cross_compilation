@@ -1,5 +1,31 @@
 # SETUP TOOL CHAINS
 
+**0.0 Linux**
+```bash
+# Descargar Android NDK (r26 o superior recomendado)
+wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
+unzip android-ndk-r26d-linux.zip -d ~/android-ndk
+
+sudo apt update
+sudo apt install pipx
+pipx install conan
+
+# Instalación de librería faltante común
+cd /tmp
+git clone https://github.com/liblogicalaccess/cppkcs11.git
+cd cppkcs11
+conan create . --build=missing
+conan list "cppkcs11/*"
+
+# Librería de compilación 
+sudo apt install clang
+
+# Librería de assembler de android arm para linux
+sudo apt install binutils-aarch64-linux-gnu gcc-aarch64-linux-gnu
+
+```
+
+
 **1. macOS (nativo)**
 ```bash
 xcode-select --install       # Clang + herramientas de compilación
@@ -7,6 +33,8 @@ brew install cmake
 brew install curl             # normalmente ya está, pero mejor la versión de Homebrew con headers
 brew install ninja
 ```
+
+
 
 ```bash
 # Instalar pipx
@@ -48,6 +76,26 @@ tools.android:ndk_path=/opt/homebrew/share/android-commandlinetools/ndk/26.1.109
 
 [buildenv]
 PATH+=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin
+EOF
+
+# Android desde Linux
+
+cat > ~/.conan2/profiles/android-arm64 << 'EOF'
+[settings]
+os=Android
+os.api_level=21
+arch=armv8
+compiler=clang
+compiler.version=17
+compiler.libcxx=c++_shared
+build_type=Release
+
+[conf]
+# Ruta al Android NDK. Ajusta según tu máquina.
+# - kendall: /home/kendall/android-ndk/android-ndk-r26d
+# - serverdevops: /home/serverdevops/android-ndk/android-ndk-r26d
+tools.android:ndk_path=/home/serverdevops/android-ndk/android-ndk-r26d
+tools.build:compiler_executables={'c': '/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang', 'cpp':'/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang++'}
 EOF
 
 conan profile list

@@ -131,7 +131,7 @@ cmake --build build --config Release
 
 ---
 
-## 4. Compilar para Android
+## 4. Compilar para Android desde mac os ARM64
 
 > **Importante:** para Android siempre usar el toolchain de Conan, **nunca** el NDK directamente. El toolchain de Conan configura el NDK internamente Y provee OpenSSL cross-compilado para arm64.
 
@@ -153,6 +153,47 @@ Artefactos generados:
 build-android/
 ├── libnetclient.so    # librería compartida (OpenSSL linkeado estáticamente)
 └── netclient_test     # ejecutable de prueba
+```
+
+
+## 4.2 Compilar para Android desde Linux x86
+
+> **Importante:** para Android siempre usar el toolchain de Conan, **nunca** el NDK directamente. El toolchain de Conan configura el NDK internamente Y provee OpenSSL cross-compilado para arm64.
+
+```bash
+wget https://dl.google.com/android/repository/android-ndk-r26d-linux.zip
+unzip android-ndk-r26d-linux.zip -d ~/android-ndk
+
+cat > ~/.conan2/profiles/android-arm64 << 'EOF'
+[settings]
+os=Android
+os.api_level=21
+arch=armv8
+compiler=clang
+compiler.version=17
+compiler.libcxx=c++_shared
+build_type=Release
+
+[conf]
+# Ruta al Android NDK. Ajusta según tu máquina.
+# - kendall: /home/kendall/android-ndk/android-ndk-r26d
+# - serverdevops: /home/serverdevops/android-ndk/android-ndk-r26d
+tools.android:ndk_path=/home/serverdevops/android-ndk/android-ndk-r26d
+tools.build:compiler_executables={'c': '/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang', 'cpp':'/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang++'}
+EOF
+
+
+# Paso 1 — instalar dependencias con Conan para arm64
+conan install . -pr:h=android-arm64 -pr:b=default --build=missing -of=build/android -o "logicalaccess/*:LLA_BUILD_PKCS"
+
+# Paso 2 — configurar CMake con el toolchain de Conan (no $ANDROID_NDK/...)
+cmake -S . -B build/android_build \
+    -DCMAKE_TOOLCHAIN_FILE=build/android/build/Release/generators/conan_toolchain.cmake \
+    -DCMAKE_BUILD_TYPE=Release \
+    -DLLA_BUILD_PKCS=OFF
+
+# Paso 3 — compilar
+cmake --build build/android_build --config Release
 ```
 
 ---
