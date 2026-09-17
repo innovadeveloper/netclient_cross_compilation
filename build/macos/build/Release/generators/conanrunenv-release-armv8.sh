@@ -1,4 +1,4 @@
-script_folder="/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/macos/build/Release/generators"
+script_folder="/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/macos/build/Release/generators"
 echo "echo Restoring environment" > "$script_folder/deactivate_conanrunenv-release-armv8.sh"
 for v in OPENSSL_MODULES
 do
@@ -12,4 +12,4 @@ do
    fi
 done
 
-export OPENSSL_MODULES="/Users/mac/.conan2/p/b/opense8810c52d4892/p/lib/ossl-modules"
+export OPENSSL_MODULES="/Users/kenny/.conan2/p/b/opensdf5544c48d047/p/lib/ossl-modules"

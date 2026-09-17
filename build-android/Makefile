@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation
+CMAKE_SOURCE_DIR = /Users/kenny/Projects/C++Projects/netclient_cross_compilation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android
+CMAKE_BINARY_DIR = /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,37 +117,37 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named sample
+# Target rules for targets named system_sora_ws
 
 # Build rule for target.
-sample: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample
-.PHONY : sample
+system_sora_ws: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 system_sora_ws
+.PHONY : system_sora_ws
 
 # fast build rule for target.
-sample/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/build
-.PHONY : sample/fast
+system_sora_ws/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/build
+.PHONY : system_sora_ws/fast
 
 #=============================================================================
-# Target rules for targets named sample_test
+# Target rules for targets named system_sora_ws_test
 
 # Build rule for target.
-sample_test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 sample_test
-.PHONY : sample_test
+system_sora_ws_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 system_sora_ws_test
+.PHONY : system_sora_ws_test
 
 # fast build rule for target.
-sample_test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/build
-.PHONY : sample_test/fast
+system_sora_ws_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws_test.dir/build.make CMakeFiles/system_sora_ws_test.dir/build
+.PHONY : system_sora_ws_test/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws_test.dir/build.make CMakeFiles/system_sora_ws_test.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -155,7 +155,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws_test.dir/build.make CMakeFiles/system_sora_ws_test.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -163,7 +163,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample_test.dir/build.make CMakeFiles/sample_test.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws_test.dir/build.make CMakeFiles/system_sora_ws_test.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 src/platform/android/transport_android.o: src/platform/android/transport_android.cpp.o
@@ -171,7 +171,7 @@ src/platform/android/transport_android.o: src/platform/android/transport_android
 
 # target to build an object file
 src/platform/android/transport_android.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/platform/android/transport_android.cpp.o
 .PHONY : src/platform/android/transport_android.cpp.o
 
 src/platform/android/transport_android.i: src/platform/android/transport_android.cpp.i
@@ -179,7 +179,7 @@ src/platform/android/transport_android.i: src/platform/android/transport_android
 
 # target to preprocess a source file
 src/platform/android/transport_android.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/platform/android/transport_android.cpp.i
 .PHONY : src/platform/android/transport_android.cpp.i
 
 src/platform/android/transport_android.s: src/platform/android/transport_android.cpp.s
@@ -187,7 +187,7 @@ src/platform/android/transport_android.s: src/platform/android/transport_android
 
 # target to generate assembly for a file
 src/platform/android/transport_android.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/platform/android/transport_android.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/platform/android/transport_android.cpp.s
 .PHONY : src/platform/android/transport_android.cpp.s
 
 src/sample.o: src/sample.cpp.o
@@ -195,7 +195,7 @@ src/sample.o: src/sample.cpp.o
 
 # target to build an object file
 src/sample.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/sample.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/sample.cpp.o
 .PHONY : src/sample.cpp.o
 
 src/sample.i: src/sample.cpp.i
@@ -203,7 +203,7 @@ src/sample.i: src/sample.cpp.i
 
 # target to preprocess a source file
 src/sample.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/sample.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/sample.cpp.i
 .PHONY : src/sample.cpp.i
 
 src/sample.s: src/sample.cpp.s
@@ -211,8 +211,32 @@ src/sample.s: src/sample.cpp.s
 
 # target to generate assembly for a file
 src/sample.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/sample.dir/build.make CMakeFiles/sample.dir/src/sample.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/sample.cpp.s
 .PHONY : src/sample.cpp.s
+
+src/websocket/lws_websocket_client.o: src/websocket/lws_websocket_client.cpp.o
+.PHONY : src/websocket/lws_websocket_client.o
+
+# target to build an object file
+src/websocket/lws_websocket_client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o
+.PHONY : src/websocket/lws_websocket_client.cpp.o
+
+src/websocket/lws_websocket_client.i: src/websocket/lws_websocket_client.cpp.i
+.PHONY : src/websocket/lws_websocket_client.i
+
+# target to preprocess a source file
+src/websocket/lws_websocket_client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.i
+.PHONY : src/websocket/lws_websocket_client.cpp.i
+
+src/websocket/lws_websocket_client.s: src/websocket/lws_websocket_client.cpp.s
+.PHONY : src/websocket/lws_websocket_client.s
+
+# target to generate assembly for a file
+src/websocket/lws_websocket_client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws.dir/build.make CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.s
+.PHONY : src/websocket/lws_websocket_client.cpp.s
 
 # Help Target
 help:
@@ -222,8 +246,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... sample"
-	@echo "... sample_test"
+	@echo "... system_sora_ws"
+	@echo "... system_sora_ws_test"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
@@ -233,6 +257,9 @@ help:
 	@echo "... src/sample.o"
 	@echo "... src/sample.i"
 	@echo "... src/sample.s"
+	@echo "... src/websocket/lws_websocket_client.o"
+	@echo "... src/websocket/lws_websocket_client.i"
+	@echo "... src/websocket/lws_websocket_client.s"
 .PHONY : help
 
 

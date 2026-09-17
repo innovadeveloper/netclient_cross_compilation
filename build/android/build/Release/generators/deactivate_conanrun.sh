@@ -1,1 +1,1 @@
-. "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators/deactivate_conanrunenv-release-armv8.sh"
+. "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators/deactivate_conanrunenv-release-armv8.sh"

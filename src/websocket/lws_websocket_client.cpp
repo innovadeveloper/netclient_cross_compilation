@@ -225,13 +225,16 @@ int LwsWebSocketClient::lwsCallbackTrampoline(struct lws* wsi, enum lws_callback
         }
 
         case LWS_CALLBACK_CLIENT_RECEIVE: {
-            std::string message(static_cast<const char*>(in), len);
-            MessageCallback cb;
-            {
-                std::lock_guard<std::mutex> lock(self->callbackMutex_);
-                cb = self->onMessage_;
+            self->receiveBuffer_.append(static_cast<const char*>(in), len);
+            if (lws_is_final_fragment(wsi)) {
+                MessageCallback cb;
+                {
+                    std::lock_guard<std::mutex> lock(self->callbackMutex_);
+                    cb = self->onMessage_;
+                }
+                if (cb) cb(self->receiveBuffer_);
+                self->receiveBuffer_.clear();
             }
-            if (cb) cb(message);
             break;
         }
 
@@ -305,6 +308,7 @@ void LwsWebSocketClient::runLoop() {
         }
 
         wsi_ = nullptr;
+        receiveBuffer_.clear();
         {
             std::lock_guard<std::mutex> lock(sendMutex_);
             sendQueue_.clear();

@@ -14,7 +14,7 @@ set(ZLIB_FIND_MODE "MODULE")
 
 ########### VARIABLES #######################################################################
 #############################################################################################
-set(libcurl_PACKAGE_FOLDER_RELEASE "/Users/mac/.conan2/p/b/libcu9fc8a470d3116/p")
+set(libcurl_PACKAGE_FOLDER_RELEASE "/Users/kenny/.conan2/p/b/libcub481a10758f25/p")
 set(libcurl_BUILD_MODULES_PATHS_RELEASE )
 
 

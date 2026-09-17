@@ -1,13 +1,7 @@
-# ninja log v6
-525	596	1789665119758899362	libsample.dylib	115e71f8f1a6af8c
-4	90	1789653714227351453	CMakeFiles/sample.dir/src/sample.cpp.o	173d9231d7ec1ac3
-5	470	1789653786222191572	CMakeFiles/sample_test.dir/main.cpp.o	925f25daef936bf3
-596	663	1789665119830801277	sample_test	f67b3e711b6bb54b
-12	524	1789665119246505512	CMakeFiles/sample.dir/src/websocket/lws_websocket_client.cpp.o	e07c74bd017bae03
-5	89	1789653714227912554	CMakeFiles/sample.dir/src/platform/macos/transport_macos.cpp.o	2d6180942b800673
-2	36	1789666402885683459	CMakeFiles/system_sora_ws.dir/src/sample.cpp.o	80f6e1e77b0ba7fc
-2	37	1789666402886034293	CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o	2f1965e814c5109c
-2	466	1789666402886162835	CMakeFiles/system_sora_ws_test.dir/main.cpp.o	e5cff77d0272d180
-2	532	1789666402885910001	CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o	c5cc0b0e7bebef75
-532	608	1789666403416400151	libsystem_sora_ws.dylib	a6aa9a5045187c95
-608	673	1789666403492468280	system_sora_ws_test	adab3ea8d2ed691d
+# ninja log v7
+8	71	1789673504143551676	CMakeFiles/system_sora_ws.dir/src/sample.cpp.o	334d1687eaf0d286
+9	73	1789673504144150830	CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o	b7e10a4923ec6d42
+9	566	1789673504144299743	CMakeFiles/system_sora_ws_test.dir/main.cpp.o	915d75dee1612478
+9	651	1789673504143984921	CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o	56b76a56ce769f53
+651	783	1789673504785941164	libsystem_sora_ws.dylib	586540703bb936ce
+783	856	1789673504917762323	system_sora_ws_test	6c5955292fb86a2

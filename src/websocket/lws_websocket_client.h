@@ -81,6 +81,8 @@ private:
     ReconnectPolicy policy_;
     std::mutex policyMutex_;
     int reconnectAttempts_ = 0;
+
+    std::string receiveBuffer_;
 };
 
 } // namespace system_sora::websocket

@@ -1,4 +1,4 @@
-/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/sample.dir
-/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/sample_test.dir
-/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/edit_cache.dir
-/Users/mac/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/rebuild_cache.dir
+/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/system_sora_ws.dir
+/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/system_sora_ws_test.dir
+/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/edit_cache.dir
+/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles/rebuild_cache.dir

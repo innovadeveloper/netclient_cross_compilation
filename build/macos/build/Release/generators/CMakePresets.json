@@ -19,7 +19,7 @@
                 "CMAKE_BUILD_TYPE": "Release"
             },
             "toolchainFile": "generators/conan_toolchain.cmake",
-            "binaryDir": "/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/macos/build/Release"
+            "binaryDir": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/macos/build/Release"
         }
     ],
     "buildPresets": [
@@ -37,7 +37,7 @@
                 "jobs": 10
             },
             "environment": {
-                "OPENSSL_MODULES": "/Users/mac/.conan2/p/b/opense8810c52d4892/p/lib/ossl-modules"
+                "OPENSSL_MODULES": "/Users/kenny/.conan2/p/b/opensdf5544c48d047/p/lib/ossl-modules"
             }
         }
     ]

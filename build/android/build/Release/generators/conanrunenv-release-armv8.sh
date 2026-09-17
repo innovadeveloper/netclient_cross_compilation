@@ -1,4 +1,4 @@
-script_folder="/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators"
+script_folder="/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators"
 echo "echo Restoring environment" > "$script_folder/deactivate_conanrunenv-release-armv8.sh"
 for v in OPENSSL_MODULES
 do
@@ -12,4 +12,4 @@ do
    fi
 done
 
-export OPENSSL_MODULES="/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/ossl-modules"
+export OPENSSL_MODULES="/Users/kenny/.conan2/p/b/opensfd59fe2fc31d4/p/lib/ossl-modules"

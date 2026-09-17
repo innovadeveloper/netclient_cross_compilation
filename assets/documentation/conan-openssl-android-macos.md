@@ -193,16 +193,16 @@ NEEDED  libc.so
 ```bash
 # 1. Subir los 3 archivos necesarios
 adb push build-android/netclient_test /data/local/tmp/
-# adb push build-android/sample_test /data/local/tmp/
+# adb push build-android/system_sora_ws_test /data/local/tmp/
 adb push build-android/libnetclient.so /data/local/tmp/
-# adb push build-android/libsample.so /data/local/tmp/
+# adb push build-android/libsystem_sora_ws.so /data/local/tmp/
 adb push \
   /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so \
   /data/local/tmp/
 
 # 2. Dar permisos y ejecutar
 adb shell "cd /data/local/tmp && chmod +x netclient_test && LD_LIBRARY_PATH=/data/local/tmp ./netclient_test"
-# adb shell "cd /data/local/tmp && chmod +x sample_test && LD_LIBRARY_PATH=/data/local/tmp ./sample_test"
+# adb shell "cd /data/local/tmp && chmod +x system_sora_ws_test && LD_LIBRARY_PATH=/data/local/tmp ./system_sora_ws_test"
 ```
 
 Salida esperada:

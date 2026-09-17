@@ -1,4 +1,4 @@
-script_folder="/Users/mac/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators"
+script_folder="/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/android/build/Release/generators"
 echo "echo Restoring environment" > "$script_folder/deactivate_conanbuildenv-release-armv8.sh"
 for v in PATH
 do

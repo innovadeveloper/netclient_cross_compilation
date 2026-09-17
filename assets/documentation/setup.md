@@ -18,6 +18,41 @@ pipx install conan
 pipx install --python /opt/homebrew/bin/python3.11 "conan==2.20.1"
 conan --version
     # Conan version 2.32.0
+
+# 0. Configurar Conan (si no lo has hecho antes):
+mkdir -p ~/.conan2/profiles
+cat > ~/.conan2/profiles/default << 'EOF'
+[settings]
+arch=armv8
+build_type=Release
+compiler=apple-clang
+compiler.cppstd=gnu17
+compiler.libcxx=libc++
+compiler.version=15
+os=Macos
+EOF
+
+cat > ~/.conan2/profiles/android_armv8 << 'EOF'
+[settings]
+arch=armv8
+build_type=Release
+compiler=clang
+compiler.cppstd=17
+compiler.libcxx=c++_shared
+compiler.version=17
+os=Android
+os.api_level=24
+
+[conf]
+tools.android:ndk_path=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
+
+[buildenv]
+PATH+=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin
+EOF
+
+conan profile list
+conan profile show -pr=android_armv8
+conan profile show -pr=default
 ```
 
 **2. Android (NDK)**
