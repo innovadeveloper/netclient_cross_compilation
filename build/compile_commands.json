@@ -1,26 +1,32 @@
 [
 {
-  "directory": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build",
-  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/include -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/kenny/.conan2/p/b/libwe728a5305340ca/p/include -isystem /Users/kenny/.conan2/p/b/opens1cdd558f833a2/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/sample.cpp.o -c /Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
-  "file": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
-  "output": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/sample.cpp.o"
+  "directory": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build",
+  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/sample.cpp.o -c /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
+  "file": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/sample.cpp",
+  "output": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/sample.cpp.o"
 },
 {
-  "directory": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build",
-  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/include -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/kenny/.conan2/p/b/libwe728a5305340ca/p/include -isystem /Users/kenny/.conan2/p/b/opens1cdd558f833a2/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o -c /Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
-  "file": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
-  "output": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o"
+  "directory": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build",
+  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o -c /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
+  "file": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/websocket/lws_websocket_client.cpp",
+  "output": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/websocket/lws_websocket_client.cpp.o"
 },
 {
-  "directory": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build",
-  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/include -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/kenny/.conan2/p/b/libwe728a5305340ca/p/include -isystem /Users/kenny/.conan2/p/b/opens1cdd558f833a2/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o -c /Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
-  "file": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
-  "output": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o"
+  "directory": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build",
+  "command": "/usr/bin/c++ -Dsystem_sora_ws_EXPORTS -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/include -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -fPIC -o CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o -c /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
+  "file": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/src/platform/macos/transport_macos.cpp",
+  "output": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws.dir/src/platform/macos/transport_macos.cpp.o"
 },
 {
-  "directory": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build",
-  "command": "/usr/bin/c++ -DCURL_STATICLIB=1 -I/Users/kenny/Projects/C++Projects/netclient_cross_compilation/include -isystem /Users/kenny/.conan2/p/b/libcu928e93b79251b/p/include -isystem /Users/kenny/.conan2/p/b/paho-b8390728b01e5/p/include -isystem /Users/kenny/.conan2/p/b/opens1cdd558f833a2/p/include -isystem /Users/kenny/.conan2/p/b/libwe728a5305340ca/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o CMakeFiles/system_sora_ws_test.dir/main.cpp.o -c /Users/kenny/Projects/C++Projects/netclient_cross_compilation/main.cpp",
-  "file": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/main.cpp",
-  "output": "/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws_test.dir/main.cpp.o"
+  "directory": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build",
+  "command": "/usr/bin/c++ -DCURL_STATICLIB=1 -I/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/include -isystem /Users/mac/.conan2/p/b/libcub8363b7bcfac1/p/include -isystem /Users/mac/.conan2/p/b/paho-f5d7e6cbdad97/p/include -isystem /Users/mac/.conan2/p/b/opens1d914808d9307/p/include -isystem /Users/mac/.conan2/p/b/libwe77bc7b2857d41/p/include -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/system_sora_ws_test.dir/main.cpp.o -c /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/main.cpp",
+  "file": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/main.cpp",
+  "output": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/system_sora_ws_test.dir/main.cpp.o"
+},
+{
+  "directory": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build",
+  "command": "/usr/bin/c++ -stdlib=libc++ -g -std=gnu++17 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk -o CMakeFiles/event_loop_demo.dir/examples/event_loop_demo.cpp.o -c /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/examples/event_loop_demo.cpp",
+  "file": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/examples/event_loop_demo.cpp",
+  "output": "/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/CMakeFiles/event_loop_demo.dir/examples/event_loop_demo.cpp.o"
 }
 ]

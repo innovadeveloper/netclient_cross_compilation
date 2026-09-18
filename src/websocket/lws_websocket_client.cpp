@@ -256,6 +256,9 @@ int LwsWebSocketClient::lwsCallbackTrampoline(struct lws* wsi, enum lws_callback
 }
 
 void LwsWebSocketClient::runLoop() {
+    #ifdef __ANDROID__
+    pthread_setname_np(pthread_self(), "LwsWebSocket");
+    #endif
     protocols_[0] = {"sample-ws-protocol", &LwsWebSocketClient::lwsCallbackTrampoline,
                       sizeof(PerSessionData), kWsBufferSize, 0, nullptr, 0};
     protocols_[1] = {nullptr, nullptr, 0, 0, 0, nullptr, 0};

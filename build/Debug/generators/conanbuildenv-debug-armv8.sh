@@ -1,4 +1,4 @@
-script_folder="/Users/kenny/Projects/C++Projects/netclient_cross_compilation/build/Debug/generators"
+script_folder="/Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build/Debug/generators"
 echo "echo Restoring environment" > "$script_folder/deactivate_conanbuildenv-debug-armv8.sh"
 for v in 
 do

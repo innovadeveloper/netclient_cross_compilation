@@ -2,7 +2,6 @@
 
 OpenSSL como caso de uso. ESP32 excluido de este POC.
 
----
 
 ## Índice
 
@@ -194,6 +193,21 @@ cmake -S . -B build/android_build \
 
 # Paso 3 — compilar
 cmake --build build/android_build --config Release
+```
+
+## 4.3 Compilar para Linux
+
+```bash
+# Paso 1 — instalar dependencias con Conan
+conan install . -pr:h=default -pr:b=default --build=missing -of=build/linux
+
+# Paso 2 — configurar CMake con el toolchain generado por Conan
+cmake -S . -B build \
+  -DCMAKE_TOOLCHAIN_FILE=build/linux/build/Release/generators/conan_toolchain.cmake \
+  -DCMAKE_BUILD_TYPE=Release
+
+# Paso 3 — compilar
+cmake --build build --config Release
 ```
 
 ---

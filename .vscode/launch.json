@@ -26,6 +26,32 @@
             "externalConsole": false,
             "MIMode": "lldb",
             "preLaunchTask": "sample: cmake build fast"
+        },
+        {
+            "name": "evloop: debug (conan+cmake)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/event_loop_demo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "sample: cmake build"
+        },
+        {
+            "name": "evloop: debug (conan+cmake) fast",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/event_loop_demo",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "sample: cmake build fast"
         }
     ]
 }

@@ -36,3 +36,7 @@ target_link_libraries(system_sora_ws_test PRIVATE
     CURL::libcurl
     eclipse-paho-mqtt-c::paho-mqtt3as-static
     websockets)
+
+find_package(Threads REQUIRED)
+add_executable(event_loop_demo examples/event_loop_demo.cpp)
+target_link_libraries(event_loop_demo PRIVATE Threads::Threads)
