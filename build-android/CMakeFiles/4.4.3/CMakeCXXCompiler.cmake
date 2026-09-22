@@ -21,7 +21,7 @@ set(CMAKE_CXX_SIMULATE_ID "")
 set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "GNU")
 set(CMAKE_CXX_COMPILER_APPLE_SYSROOT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
-set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "aarch64")
+set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "armv7")
 
 
 
@@ -34,7 +34,7 @@ set(CMAKE_LINKER "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin/ld.lld")
-set(CMAKE_CXX_COMPILER_LINKER_ARCHITECTURE_FLAGS "-m;aarch64linux")
+set(CMAKE_CXX_COMPILER_LINKER_ARCHITECTURE_FLAGS "-m;armelf")
 set(CMAKE_CXX_COMPILER_LINKER_ID "LLD")
 set(CMAKE_CXX_COMPILER_LINKER_VERSION "17.0.2")
 set(CMAKE_CXX_COMPILER_LINKER_FRONTEND_VARIANT "GNU")
@@ -66,10 +66,10 @@ set(CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED TRUE)
 set(CMAKE_CXX_LINKER_PUSHPOP_STATE_SUPPORTED TRUE)
 
 # Save compiler ABI information.
-set(CMAKE_CXX_SIZEOF_DATA_PTR "8")
+set(CMAKE_CXX_SIZEOF_DATA_PTR "4")
 set(CMAKE_CXX_COMPILER_ABI "ELF")
 set(CMAKE_CXX_BYTE_ORDER "LITTLE_ENDIAN")
-set(CMAKE_CXX_LIBRARY_ARCHITECTURE "aarch64-linux-android")
+set(CMAKE_CXX_LIBRARY_ARCHITECTURE "arm-linux-androideabi")
 
 if(CMAKE_CXX_SIZEOF_DATA_PTR)
   set(CMAKE_SIZEOF_VOID_P "${CMAKE_CXX_SIZEOF_DATA_PTR}")
@@ -80,7 +80,7 @@ if(CMAKE_CXX_COMPILER_ABI)
 endif()
 
 if(CMAKE_CXX_LIBRARY_ARCHITECTURE)
-  set(CMAKE_LIBRARY_ARCHITECTURE "aarch64-linux-android")
+  set(CMAKE_LIBRARY_ARCHITECTURE "arm-linux-androideabi")
 endif()
 
 set(CMAKE_CXX_CL_SHOWINCLUDES_PREFIX "")
@@ -92,9 +92,9 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/lib/clang/17/include;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/aarch64-linux-android;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/c++/v1;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/lib/clang/17/include;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include/arm-linux-androideabi;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++;m;-l:libunwind.a;dl;c;-l:libunwind.a;dl")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/lib/clang/17/lib/linux/aarch64;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/24;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/lib/clang/17/lib/linux/arm;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/21;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi;/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 set(CMAKE_CXX_COMPILER_CLANG_RESOURCE_DIR "/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/lib/clang/17")
 

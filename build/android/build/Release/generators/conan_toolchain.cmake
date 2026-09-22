@@ -30,12 +30,12 @@ endif()
 # and include(.../android.toolchain.cmake) from NDK toolchain file
 
 # New Android toolchain definitions
-message(STATUS "Conan toolchain: Setting Android platform: android-24")
-set(ANDROID_PLATFORM android-24)
+message(STATUS "Conan toolchain: Setting Android platform: android-21")
+set(ANDROID_PLATFORM android-21)
 message(STATUS "Conan toolchain: Setting Android stl: c++_shared")
 set(ANDROID_STL c++_shared)
-message(STATUS "Conan toolchain: Setting Android abi: arm64-v8a")
-set(ANDROID_ABI arm64-v8a)
+message(STATUS "Conan toolchain: Setting Android abi: armeabi-v7a")
+set(ANDROID_ABI armeabi-v7a)
 include("/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/build/cmake/android.toolchain.cmake")
 
 
@@ -47,27 +47,6 @@ include("/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/build/cm
 # Definition of libcxx from 'compiler.libcxx' setting, defining the
 # right CXX_FLAGS for that libcxx
 
-
-
-########## 'cppstd' block #############
-# Define the C++ and C standards from 'compiler.cppstd' and 'compiler.cstd'
-
-function(conan_modify_std_watch variable access value current_list_file stack)
-    set(conan_watched_std_variable "17")
-    if (${variable} STREQUAL "CMAKE_C_STANDARD")
-        set(conan_watched_std_variable "")
-    endif()
-    if ("${access}" STREQUAL "MODIFIED_ACCESS" AND NOT "${value}" STREQUAL "${conan_watched_std_variable}")
-        message(STATUS "Warning: Standard ${variable} value defined in conan_toolchain.cmake to ${conan_watched_std_variable} has been modified to ${value} by ${current_list_file}")
-    endif()
-    unset(conan_watched_std_variable)
-endfunction()
-
-message(STATUS "Conan toolchain: C++ Standard 17 with extensions OFF")
-set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_EXTENSIONS OFF)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
-variable_watch(CMAKE_CXX_STANDARD conan_modify_std_watch)
 
 
 ########## 'extra_flags' block #############
@@ -153,18 +132,18 @@ else()
 set(CMAKE_FIND_PACKAGE_PREFER_CONFIG ON)
 
 # Definition of CMAKE_MODULE_PATH
-list(PREPEND CMAKE_MODULE_PATH "/Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/lib/cmake" "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/cmake")
+list(PREPEND CMAKE_MODULE_PATH "/Users/kenny/.conan2/p/b/libwe112897a7360e0/p/lib/cmake" "/Users/kenny/.conan2/p/b/opens162b433d79505/p/lib/cmake")
 # the generators folder (where conan generates files, like this toolchain)
 list(PREPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_LIST_DIR})
 
 # Definition of CMAKE_PREFIX_PATH, CMAKE_XXXXX_PATH
 # The explicitly defined "builddirs" of "host" context dependencies must be in PREFIX_PATH
-list(PREPEND CMAKE_PREFIX_PATH "/Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/lib/cmake" "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib/cmake")
+list(PREPEND CMAKE_PREFIX_PATH "/Users/kenny/.conan2/p/b/libwe112897a7360e0/p/lib/cmake" "/Users/kenny/.conan2/p/b/opens162b433d79505/p/lib/cmake")
 # The Conan local "generators" folder, where this toolchain is saved.
 list(PREPEND CMAKE_PREFIX_PATH ${CMAKE_CURRENT_LIST_DIR} )
-list(PREPEND CMAKE_LIBRARY_PATH "/Users/mac/.conan2/p/b/libcu9fc8a470d3116/p/lib" "/Users/mac/.conan2/p/b/paho-8e7514c758216/p/lib" "/Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/lib" "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib" "/Users/mac/.conan2/p/b/zlibfcf57a535f0b7/p/lib")
-list(PREPEND CMAKE_INCLUDE_PATH "/Users/mac/.conan2/p/b/libcu9fc8a470d3116/p/include" "/Users/mac/.conan2/p/b/paho-8e7514c758216/p/include" "/Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/include" "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/include" "/Users/mac/.conan2/p/b/zlibfcf57a535f0b7/p/include")
-set(CONAN_RUNTIME_LIB_DIRS "/Users/mac/.conan2/p/b/libcu9fc8a470d3116/p/lib" "/Users/mac/.conan2/p/b/paho-8e7514c758216/p/lib" "/Users/mac/.conan2/p/b/libwee2a38f7f337ae/p/lib" "/Users/mac/.conan2/p/b/opens51be86cd5f875/p/lib" "/Users/mac/.conan2/p/b/zlibfcf57a535f0b7/p/lib" )
+list(PREPEND CMAKE_LIBRARY_PATH "/Users/kenny/.conan2/p/b/libcufa89e42b55dfa/p/lib" "/Users/kenny/.conan2/p/b/paho-8b8aa9a84c9a1/p/lib" "/Users/kenny/.conan2/p/b/libwe112897a7360e0/p/lib" "/Users/kenny/.conan2/p/b/opens162b433d79505/p/lib" "/Users/kenny/.conan2/p/b/zlib97c82a4f6cc04/p/lib")
+list(PREPEND CMAKE_INCLUDE_PATH "/Users/kenny/.conan2/p/b/libcufa89e42b55dfa/p/include" "/Users/kenny/.conan2/p/b/paho-8b8aa9a84c9a1/p/include" "/Users/kenny/.conan2/p/b/libwe112897a7360e0/p/include" "/Users/kenny/.conan2/p/b/opens162b433d79505/p/include" "/Users/kenny/.conan2/p/b/zlib97c82a4f6cc04/p/include")
+set(CONAN_RUNTIME_LIB_DIRS "/Users/kenny/.conan2/p/b/libcufa89e42b55dfa/p/lib" "/Users/kenny/.conan2/p/b/paho-8b8aa9a84c9a1/p/lib" "/Users/kenny/.conan2/p/b/libwe112897a7360e0/p/lib" "/Users/kenny/.conan2/p/b/opens162b433d79505/p/lib" "/Users/kenny/.conan2/p/b/zlib97c82a4f6cc04/p/lib" )
 
 if(NOT DEFINED CMAKE_FIND_ROOT_PATH_MODE_PACKAGE OR CMAKE_FIND_ROOT_PATH_MODE_PACKAGE STREQUAL "ONLY")
     set(CMAKE_FIND_ROOT_PATH_MODE_PACKAGE "BOTH")

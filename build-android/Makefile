@@ -57,10 +57,10 @@ RM = /opt/homebrew/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation
+CMAKE_SOURCE_DIR = /Users/kenny/Projects/C++Projects/netclient_cross_compilation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build-android
+CMAKE_BINARY_DIR = /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build-android//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mac/Documents/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,43 @@ system_sora_ws_test: cmake_check_build_system
 system_sora_ws_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/system_sora_ws_test.dir/build.make CMakeFiles/system_sora_ws_test.dir/build
 .PHONY : system_sora_ws_test/fast
+
+#=============================================================================
+# Target rules for targets named event_loop_demo
+
+# Build rule for target.
+event_loop_demo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 event_loop_demo
+.PHONY : event_loop_demo
+
+# fast build rule for target.
+event_loop_demo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/event_loop_demo.dir/build.make CMakeFiles/event_loop_demo.dir/build
+.PHONY : event_loop_demo/fast
+
+examples/event_loop_demo.o: examples/event_loop_demo.cpp.o
+.PHONY : examples/event_loop_demo.o
+
+# target to build an object file
+examples/event_loop_demo.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/event_loop_demo.dir/build.make CMakeFiles/event_loop_demo.dir/examples/event_loop_demo.cpp.o
+.PHONY : examples/event_loop_demo.cpp.o
+
+examples/event_loop_demo.i: examples/event_loop_demo.cpp.i
+.PHONY : examples/event_loop_demo.i
+
+# target to preprocess a source file
+examples/event_loop_demo.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/event_loop_demo.dir/build.make CMakeFiles/event_loop_demo.dir/examples/event_loop_demo.cpp.i
+.PHONY : examples/event_loop_demo.cpp.i
+
+examples/event_loop_demo.s: examples/event_loop_demo.cpp.s
+.PHONY : examples/event_loop_demo.s
+
+# target to generate assembly for a file
+examples/event_loop_demo.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/event_loop_demo.dir/build.make CMakeFiles/event_loop_demo.dir/examples/event_loop_demo.cpp.s
+.PHONY : examples/event_loop_demo.cpp.s
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -246,8 +283,12 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... event_loop_demo"
 	@echo "... system_sora_ws"
 	@echo "... system_sora_ws_test"
+	@echo "... examples/event_loop_demo.o"
+	@echo "... examples/event_loop_demo.i"
+	@echo "... examples/event_loop_demo.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

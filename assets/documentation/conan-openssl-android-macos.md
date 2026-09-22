@@ -137,11 +137,15 @@ cmake --build build --config Release
 ```bash
 # Paso 1 — instalar dependencias con Conan para arm64
 conan install . -pr:h=android_armv8 -pr:b=default --build=missing -of=build/android
+# conan install . -pr:h=android-arm7 -pr:b=default --build=missing -of=build/android
 
 # Paso 2 — configurar CMake con el toolchain de Conan (no $ANDROID_NDK/...)
 cmake -S . -B build-android \
   -DCMAKE_TOOLCHAIN_FILE=build/android/build/Release/generators/conan_toolchain.cmake \
   -DCMAKE_BUILD_TYPE=Release
+
+# armv7 || armv8
+# cmake -S . -B build-android -DCMAKE_TOOLCHAIN_FILE=build/android/build/Release/generators/conan_toolchain.cmake -DCMAKE_BUILD_TYPE=Release
 
 # Paso 3 — compilar
 cmake --build build-android --config Release
@@ -153,6 +157,23 @@ build-android/
 ├── libnetclient.so    # librería compartida (OpenSSL linkeado estáticamente)
 └── netclient_test     # ejecutable de prueba
 ```
+
+## 4.1 Ubicaciones de los ficheros compilados
+
+[armv7] libshared.so -> /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so
+[armv8] libshared.so -> /opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so
+[armv7 || armv8] libsystem_sora_ws -> /Users/kenny/Projects/C++Projects/netclient_cross_compilation/build-android/libsystem_sora_ws.so
+
+```bash
+### REVISION DE ARQUITECTURA DE BINARIO
+NDK=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
+TOOLS=$NDK/toolchains/llvm/prebuilt/darwin-x86_64/bin
+% $TOOLS/llvm-readelf -h /Users/kenny/Projects/AndroidStudioProjects/app_mobile_libraries/ws-mobile-library/src/main/cpp/libs/armeabi-v7a/libsystem_sora_ws.so | grep Class
+  Class:                             ELF32
+% $TOOLS/llvm-readelf -h /Users/kenny/Projects/AndroidStudioProjects/app_mobile_libraries/ws-mobile-library/src/main/cpp/libs/arm64-v8a/libsystem_sora_ws.so | grep Class
+  Class:                             ELF64
+```
+
 
 
 ## 4.2 Compilar para Android desde Linux x86

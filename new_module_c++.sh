@@ -113,6 +113,26 @@ build_type=Release
 [conf]
 tools.android:ndk_path=/home/kendall/android-ndk/android-ndk-r26d
 
+2.1 Creación de android
+vim ~/.conan2/profiles/android-arm7
+[settings]
+os=Android
+os.api_level=21
+arch=armv7
+compiler=clang
+compiler.version=17
+compiler.libcxx=c++_shared  # O c++_static, según necesites
+build_type=Release
+
+[conf]
+tools.android:ndk_path=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125
+
+[buildenv]
+PATH+=/opt/homebrew/share/android-commandlinetools/ndk/26.1.10909125/toolchains/llvm/prebuilt/darwin-x86_64/bin
+
+
+
+
 ```
 
 
