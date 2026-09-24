@@ -32,6 +32,11 @@ xcode-select --install       # Clang + herramientas de compilación
 brew install cmake
 brew install curl             # normalmente ya está, pero mejor la versión de Homebrew con headers
 brew install ninja
+
+# Xcode Command Line Tools (incluye clang y PCSC.framework)
+xcode-select --install
+# Homebrew + Conan
+brew install conan cmake
 ```
 
 
@@ -96,6 +101,22 @@ build_type=Release
 # - serverdevops: /home/serverdevops/android-ndk/android-ndk-r26d
 tools.android:ndk_path=/home/serverdevops/android-ndk/android-ndk-r26d
 tools.build:compiler_executables={'c': '/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang', 'cpp':'/home/serverdevops/android-ndk/android-ndk-r26d/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android21-clang++'}
+EOF
+
+cat > ~/.conan2/profiles/macos-arm64 << 'EOF'
+[settings]
+os=Macos
+arch=armv8
+compiler=apple-clang
+compiler.version=15
+compiler.libcxx=libc++
+compiler.cppstd=gnu17
+build_type=Release
+
+[conf]
+# Rutas de las herramientas de Apple. Ajusta si tienes Xcode en otra ubicación.
+tools.apple:sdk_path=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk
+tools.build:compiler_executables={'c': '/usr/bin/clang', 'cpp': '/usr/bin/clang++'}
 EOF
 
 conan profile list
